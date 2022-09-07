@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" id="bootstrap-css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" href="css/bootstrap-social.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1565190285/Scripts/xzoom.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1565190284/Scripts/xzoom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<section class="head-section">
+    <div class="container-fluid">
+    <div class="row top-head purple">
+    <div class="container">
+    <div class="row logo_header">
+    <div class="col-sm-6">
+    <a class="navbar-header" href="#"><img src="img/logo.png" width="374" height="63" class="img-fluid" alt=""></a>
+    </div>
+    <div class="col-sm-6 radius-icon d-none d-sm-block">
+    
+     <a href="login.html" class="btn btn-responsive yellow" data-toggle="modal" data-target="#my-modal">
+            <i class="fa fa-sign-in" aria-hidden="true"></i> Login
+        </a>
+         <a href="register.html" class="btn btn-responsive blue" data-toggle="modal" data-target="#my-modal-2">
+            <i class="fa fa-user-plus" aria-hidden="true"></i> Register
+        </a>
+        
+         <a href="cart.html" class="cart hidden">
+         <button class="btn btn-xs btn-link" style="font-size:20px;">
+        <i class="fa fa-shopping-cart" style="color:#fff"></i>
+      </button>
+      <span class="badge badge-notify" style="font-size:10px;">3</span>
+        </a>
+       
+       </div> 
+       </div>
+    </div>
+    <div class="col-sm-6 radius-icon d-block d-sm-none">
+        
+            <div class="btn-group navbar-header" role="group" aria-label="Basic example">
+                <a href="login.html" class="btn btn-responsive yellow" data-toggle="modal" data-target="#my-modal">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i> Login
+                </a>
+                 <a href="register.html" class="btn btn-responsive blue" data-toggle="modal" data-target="#my-modal-2">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i> Register
+                </a>
+              </div>
+              
+    </div>
+    </div>
+    <div class="row blue main-nav">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light"><button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"> <i class="fa fa-bars text-info" aria-hidden="true"></i> </button><a href="cart.html" class="navbar-brand font-weight-bold d-block d-lg-none cart"><button class="btn btn-xs btn-link" style="font-size:20px;">
+        <i class="fa fa-shopping-cart" style="color:#fff"></i>
+      </button>
+      <span class="badge badge-notify" style="font-size:10px;">3</span></a>
+        <div id="navbarContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold text-uppercase">Home</a></li>
+                <li class="nav-item"><a href="about-us.html" class="nav-link font-weight-bold text-uppercase">About</a></li>
+                  <li class="nav-item dropdown"><a id="megamenu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">Products & Services</a>
+                      <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                          <div class="container rounded-0 m-0 blue shadow-sm px-2">
+                              <div class="row blue rounded-0 m-0">
+                                  <div class="col-lg-12 col-xl-12">
+                                      
+                                          <div class="row">
+                                              <div class="col-lg-12 mb-4">
+                                                  
+                                                  <ul class="list-unstyled">
+                                                      <li class="nav-item"><a href="motor-salvages.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>motor Salvages</a></li>
+                                                      <li class="nav-item"><a href="non-motor-salvages.html" class="nav-link text-small pb-0 "><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>non-motor salvages</a></li>
+                                                      <li class="nav-item"><a href="auctions.html" class="nav-link text-small pb-0 "><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>auctions</a></li>
+                                                      <li class="nav-item"><a href="auto-spares.html" class="nav-link text-small pb-0 "><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>auto spares</a></li>
+                                                      <li class="nav-item"><a href="electronics.html" class="nav-link text-small pb-0 "><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>electronics</a></li>
+                                                      <li class="nav-item"><a href="car-hire.html" class="nav-link text-small pb-0 "><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>car hire</a></li>
+                                                  </ul>
+                                              </div>
+                                          
+                                          </div>
+                                      
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+  
+  
+                  <li class="nav-item dropdown megamenu"><a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle font-weight-bold text-uppercase">service providers</a>
+                      <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
+                          <div class="container">
+                              <div class="row blue rounded-0 m-0 shadow-sm">
+                                  <div class="col-lg-7 col-xl-8">
+                                      <div class="p-4">
+                                          <div class="row">
+                                              <div class="col-lg-6 mb-4">
+                                                  
+                                                  <ul class="list-unstyled">
+                                                      <li class="nav-item"><a href="auto-spares-dealers.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Auto Spare Dealers<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="doctors.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Doctors<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="medical-clinics.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Medical Clinics<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="hospitals.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Hospitals<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="auctioneers.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Auctioneers<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="garage.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Garages<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="car-rental.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Car Rental<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="lawyers.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Lawyers<span class="badge badge-warning ml-1">10</span></a></li>
+                                                    
+                                                  </ul>
+                                              </div>
+                                              <div class="col-lg-6 mb-4">
+                                                 
+                                                  <ul class="list-unstyled">
+                                                      
+                                                      
+                                                      <li class="nav-item"><a href="gym.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Gym and Fitness<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="surveyors.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Surveyors<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="assesors.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Assessors<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="assesors-valuers.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Assessors and Valuers<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="salvage-dealers.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Salvage Dealers<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="electronics-sales-repairs.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Electronics Sales and Repairs<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="investigator.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Investigator<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="supplier.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Supplier<span class="badge badge-warning ml-1">10</span></a></li>
+  
+                                                     
+                                                  </ul>
+                                              </div>
+                                             
+                                              
+                                              
+                                              <div class="col-lg-6 mb-4">
+                                                  
+                                                  <ul class="list-unstyled">
+                                                      <li class="nav-item"><a href="auditors.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Auditors<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="investment-advisor.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Investment Advisor<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="corporate-trustee.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Corporate Trustee<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="fund-manager.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Fund Manager<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="scheme-consultant.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Scheme Consultant<span class="badge badge-warning ml-1">10</span></a></li>
+                                                    
+                                                  </ul>
+                                              </div>
+                                              <div class="col-lg-6 mb-4">
+                                                  
+                                                  <ul class="list-unstyled">
+                                                      <li class="nav-item"><a href="towing.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Towing<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="veterinary.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Veterinary<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="crop-inspector.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Crop Inspector
+                                                          <span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="crop-loss-adjustor.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Crop Loss Adjustor<span class="badge badge-warning ml-1">10</span></a></li>
+                                                      <li class="nav-item"><a href="building-construction.html" class="nav-link text-small pb-0"><i class="fa fa-angle-right mr-1" aria-hidden="true"></i>Building & Construction<span class="badge badge-warning ml-1">10</span></a></li>
+                                                  </ul>
+                                              </div>
+                                            
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-5 col-xl-4 px-0 d-none d-lg-block" style="background: center center url(https://images.unsplash.com/photo-1533637267520-4dfd6aa7ee93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80)no-repeat; background-size: cover;"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+                  
+  
+  
+  
+                  <li class="nav-item"><a href="Pricing.html" class="nav-link font-weight-bold text-uppercase">Pricing</a></li>
+                  
+              </ul
+
+             ><!--country-->
+         <ul class="navbar-nav ml-auto country">
+          
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe mr-1"></i>COUNTRY<span class="caret"></span></a>
+              <ul class="dropdown-menu rounded-0" role="menu">
+                <li><a href="#"><img src="img/flag.png">KE</a></li>
+                <li><a href="#"><img src="img/flag.png">UG</a></li>
+                <li><a href="#"><img src="img/flag.png">SA</a></li>
+                
+              </ul>
+            </li>
+        </ul>
+
+        </div>
+    </nav>
+    
+    </div>
+    </div>
+    </div>
+    </section>
+<section class="bg-light">
+    <div class="container search-inner">
+	<div class="row align-items-center justify-content-center">
+    					<div class="col-md-2 pt-3">
+                            <div class="form-group">
+                              <input type="text" id="keyword" placeholder="Keyword" class="form-control">
+                            </div>
+                        </div>
+            	        <div class="col-md-2 pt-3">
+                           <div class="form-group ">
+                              <select id="inputState " class="form-control">
+                                <option selected>Auctions</option>
+                                <option>Upcoming</option>
+                                <option>Past</option>
+                               
+                              </select>
+                           </div>
+                        </div>
+                		<div class="col-md-2 pt-3">
+                           <div class="form-group">
+                              <select id="inputState" class="form-control">
+                                <option selected>Year</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2013</option>
+                                <option>2020</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-md-2 pt-3">
+                            <div class="form-group">
+                              <select id="inputState" class="form-control">
+                                <option selected>Category</option>
+                                <option>BMW</option>
+                                <option>Audi</option>
+                                <option>Maruti</option>
+                                <option>Tesla</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2 pt-3">
+                            <div class="form-group">
+                              <select id="inputState" class="form-control">
+                                <option selected>Auctioneer</option>
+                                <option>BMW</option>
+                                <option>Audi</option>
+                                <option>Maruti</option>
+                                <option>Tesla</option>
+                              </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+            	           <button type="button" class="btn btn-primary btn-block purple">Search</button>
+            	        </div>
+                	</div>
+</div>
+</section>
+<hr class="divider" />
+<!-- section start Breadcrumbs here-->
+<section class="breadcrumb-0">
+<div class="container">
+ <div class="card">
+ <div class="page-header-breadcrumb">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#!" data-abc="true">
+                                <i class="fa fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#!" data-abc="true">snippets</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#!" data-abc="true">Products & Services</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#!" data-abc="true">Auctions</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#!" data-abc="true">Bid detail...</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- section end Breadcrumbs here-->
+<hr class="divider">
+
+
+<section id="default" class="inner-page product-details mb-3 pb-50">
+    <div class="container">
+       
+<div class="card">
+	<div class="row">
+		<aside class="col-md-4 d-flex justify-content-center">
+   <section id="default" class="padding-top0">
+        <div class="row">
+            <div class="large-5 column">
+                <div class="xzoom-container"> <img class="xzoom" id="xzoom-default" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190714/gallery/preview/01_b_car.jpg" xoriginal="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190715/gallery/original/01_b_car.jpg" />
+                    <div class="xzoom-thumbs"> <a href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190715/gallery/original/01_b_car.jpg"><img class="xzoom-gallery" width="80" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190716/gallery/thumbs/01_b_car.jpg" xpreview="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190714/gallery/preview/01_b_car.jpg"></a> <a href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190720/gallery/original/02_o_car.jpg"><img class="xzoom-gallery" width="80" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190720/gallery/preview/02_o_car.jpg"></a> <a href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190718/gallery/original/03_r_car.jpg"><img class="xzoom-gallery" width="80" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190715/gallery/preview/03_r_car.jpg"></a> <a href="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190717/gallery/original/04_g_car.jpg"><img class="xzoom-gallery" width="80" src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1565190714/gallery/preview/04_g_car.jpg"></a> </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+            
+                <!---Start-share-->
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                                </span><i class="fa fa-share-alt mr-1 mb-2" aria-hidden="true"></i>Share</a>
+                            </span>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="d-flex flex-row align-items-start"><i class="fa fa-facebook border p-3 rounded mr-1"></i><i class="fa fa-twitter border p-3 rounded mr-1"></i><i class="fa fa-whatsapp border p-3 rounded mr-1" aria-hidden="true"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <!--Share End-->
+                
+            </div>
+        </div>
+    </section>
+		</aside>
+		<aside class="col-md-5">
+<article class="card-body p-3">
+    
+	<h3 class="title mb-3">Toyota Fielder</h3>
+
+    <div class="star-rating">
+        <ul class="list-inline">
+            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star"></i></li>
+            <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+            <li class="list-inline-item"><a class="link" href="#">(72 Reviews)</a></li>
+        </ul>
+    </div>
+
+<hr />
+<dl class="param param-feature">
+   <dt>Select Date Range :</dt>
+
+<div class="row">
+    <div class="container px-1 py-1 px-sm-1 mx-auto">
+        <form autocomplete="off">
+            <div class="flex-row d-flex">
+                <div class="col-xl-12 col-lg-12 col-11 px-1">
+                    <div class="input-group input-daterange"><input class="form-control" type="text" name="daterange" value="01/01/2018 - 01/15/2018" readonly /> </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr>
+  <!-- item-property-hor .// -->
+
+<div class="row">
+		<div class="col-sm-5">
+			<dl class="param param-inline">
+                <dt>Body Type: </dt>
+                <dd>
+                  Hatchback 
+                </dd>
+              </dl> <!-- item-property .// -->
+		</div> <!-- col.// -->
+		<div class="col-sm-7">
+			<dl class="param param-inline">
+				  <dt>Engine Size:  </dt>
+				  <dd>
+				  	1490cc
+				  </dd>
+			</dl>  <!-- item-property .// -->
+		</div> <!-- col.// -->
+	</div> <!-- row.// -->
+    <div class="row">
+		<div class="col-sm-5">
+			<dl class="param param-inline">
+                <dt>Transmission: </dt>
+                <dd>
+                   Manual 
+                </dd>
+              </dl> <!-- item-property .// -->
+		</div> <!-- col.// -->
+		<div class="col-sm-7">
+			<dl class="param param-inline">
+				  <dt>Doors: </dt>
+				  <dd>
+				  	4
+				  </dd>
+			</dl>  <!-- item-property .// -->
+		</div> <!-- col.// -->
+	</div> <!-- row.// -->
+<hr>
+	<div class="row">
+		<div class="col-sm-5">
+			<dl class="param param-inline">
+                <dt>Price for 1 day: </dt>
+                <dd>
+                    <p class="price-detail-wrap"> 
+                        <span class="price h3 text-warning"> 
+                            <span class="currency">KSH</span><span class="num">1299</span>
+                        </span> 
+                        <span></span> 
+                    </p> <!-- price-detail-wrap .// -->  
+                </dd>
+              </dl> <!-- item-property .// -->
+		</div> <!-- col.// -->
+		<div class="col-sm-7">
+			<dl class="param param-inline">
+				  <dt>Status: </dt>
+				  <dd>
+				  	<span class="badge badge-pill badge-warning text-white">Available</span>
+				  </dd>
+			</dl>  <!-- item-property .// -->
+		</div> <!-- col.// -->
+	</div> <!-- row.// -->
+	<hr>
+	<a href="#" class="btn btn-lg btn-primary text-uppercase purple">Book Now </a>
+    
+</article> <!-- card-body.// -->
+		</aside> <!-- col.// -->
+        <aside class="col-md-3 mt-4">
+        <div class="row">
+            <div class="container shadow-sm p-4">
+                <h6><a href="my-bids.html">Renter's information<i class="fa fa-chevron-right pull-right" aria-hidden="true"></i></a>
+                </h6>
+                <hr>
+            <div class="row">
+            <div class="col-sm-4"><img src="img/brands_1.jpg" class="img-fluid"/></div> 
+            <div class="col-sm-8 p-1"><b>Ayush Shrivastava</b><br/>
+            <b>98%</b> Positive Seller Score</div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="d-flex justify-content-around">
+            <b>12 Followers</b>
+            <a href="#" class="btn btn-primary purple border-0 rounded">FOllOW</a>
+            </div>
+            </div> 
+        </div>
+        <div class="row mt-4">
+            <div class="container shadow-sm pt-2 delivery">
+                <h6>Rental Terms</h6>
+                <hr>
+                <div class="row">
+                    <div class="col-sm-2 p-2"><i class="fa fa-check-circle fa-2x border p-1 rounded" aria-hidden="true"></i></div>
+                    <div class="col-sm-10 py-2"><b>Requirements</b><p>Driver & Licence</p> </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 p-2"><i class="fa fa-check-circle fa-2x border p-1 rounded" aria-hidden="true"></i></div>
+                    <div class="col-sm-10 py-2"> <b>Fuel Policy</b>
+                    <p>Full to Full</p></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 p-2"><i class="fa fa-undo fa-2x border p-1 rounded" aria-hidden="true"></i></div>
+                    <div class="col-sm-10 py-2"> <b>Return Policy</b>
+                    <p>Easy Return, No Dents.</p></div>
+                </div>
+                
+            </div>
+        </div>
+        </aside> <!-- col.// -->
+	</div> <!-- row.// -->
+</div> <!-- card.// -->
+
+
+    </div>
+    <!--end of /.container-->
+</section>
+<!-- section end here-->
+
+
+
+
+
+<!-- section start here-->
+
+<!-- section end here-->
+<!-- section start here-->
+<section class="subscribe-area pb-50 pt-70">
+  <div class="container">
+    <div class="row">
+  
+            <div class="col-md-4">
+              <div class="subscribe-text mb-15">
+                <span><i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  JOIN OUR NEWSLETTER</span>
+                
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="subscribe-wrapper subscribe2-wrapper mb-15">
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input placeholder="enter your email address" type="email">
+                    <button>subscribe </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  </div>
+  </section>
+     
+     <!-- section end----->
+ <!-- section start here-->
+ <section class="footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="single_ftr">
+            <h4 class="sf_title">Quick links</h4>
+            <ul>
+              <li><a href="about-us.html"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Delivery Information</a></li>
+              <li><a href="#"><i class="fa fa-angle-double-right"></i>Privacy Policy</a></li>
+              <li><a href="terms.html"><i class="fa fa-angle-double-right"></i>Terms & Conditions</a></li>
+              <li><a href="contacts.html"><i class="fa fa-angle-double-right"></i>Contact Us</a></li>
+              <li><a href="faqs.html"><i class="fa fa-angle-double-right"></i>FAQs</a></li>
+            </ul>
+          </div>
+        </div> <!--  End Col --><div class="col-md-3 col-sm-6">
+          <div class="single_ftr">
+            <h4 class="sf_title">Product and Services</h4>
+            <ul>
+              <li><a href="motor-salvages.html"><i class="fa fa-angle-double-right"></i>Motor Salvages 
+              </a></li>
+              <li><a href="non-motor-salvages.html"><i class="fa fa-angle-double-right"></i>Non-Motor Salvages</a></li>
+              <li><a href="auctions.html"><i class="fa fa-angle-double-right"></i>Auctions
+              </a></li>
+              <li><a href="auto-spares.html"><i class="fa fa-angle-double-right"></i>Auto Spares</a></li>
+              <li><a href="electronics.html"><i class="fa fa-angle-double-right"></i>Electronics</a></li>
+              <li><a href="car-hire.html"><i class="fa fa-angle-double-right"></i>Car Hire</a></li>
+            </ul>
+          </div>
+        </div> <!--  End Col --><div class="col-md-3 col-sm-6">
+          <div class="single_ftr footer-contact">
+            <h4 class="sf_title">Find us</h4>
+            <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+    <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+    <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+          </div>
+        </div> <!--  End Col --><div class="col-md-3 col-sm-6">
+          <div class="single_ftr">
+            <h4 class="sf_title">Download Apps</h4>
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                  <a href="#" target="_blank"><img src="https://www.vectorvest.com/wp-content/themes/vectorvest/images/social-appstore-white.png" class=" mb-3" alt=""></a>
+              </li>
+              <li class="list-inline-item">
+                  <a href="#" target="_blank"><img src="https://www.vectorvest.com/wp-content/themes/vectorvest/images/social-googleplay-white.png" class=" mb-3" alt=""></a>
+              </li>
+          </ul>
+          <h4 class="sf_title">Connect with us</h4>
+          <ul class="list-unstyled list-inline social">
+            <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+          
+          </div>
+        </div> <!--  End Col -->    
+      </div>
+    </div>
+    
+         </section>
+          <!-- section end----->
+      <!-- start modal sign-in end----->
+      <div id="my-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center " role="document">
+            <div class="modal-content border-0 mx-3">
+                <div class="modal-body p-0">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="card-header bg-white pb-0 border-0">
+                                    <div class="row">
+                                        <div class="col text-right"><img class="img-fluid m-3 cross" src="https://retohercules.com/images/white-close-icon-png-3.png" data-dismiss="modal" alt="Image result for close png" width="17" height="17"></div>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <div class="row justify-content-center text-center">
+                                        <div class="col">
+                                            <p><b>LOGIN</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                    <div class="col-sm-12 mt-5"> <form class="form-horizontal">
+                            <!-- User Name Input -->
+                            <div class="form-group row justify-content-center">
+                                <div class="col-9"> <input type="text" placeholder="&#xf007; &nbsp; User name" class="form-control border-info placeicon"> </div>
+                            </div> <!-- Password Input -->
+                            <div class="form-group row justify-content-center">
+                                <div class="col-9 "> <input type="password" placeholder="&#xf084; &nbsp; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" class="form-control border-info placeicon"> </div>
+                            </div> <!-- CheckBox Remember Me-->
+                            <div class="form-group row justify-content-center">
+                                <div class="col-9">
+                                    <div class="row">
+                                        <div class="col-6 ">
+                                            <div class="custom-control custom-checkbox mb-3"> <input id="customCheck1" type="checkbox" class="custom-control-input checkbox-muted"> <label for="customCheck1" class="custom-control-label text-muted">Remember Me</label> </div>
+                                        </div> <!-- Forgot Password Link -->
+                                        <div class="col-6 px-0 text-right"> <span><a href="#" class="text-danger"><b>Forgot Password?</b></a></span> </div>
+                                    </div>
+                                </div>
+                            </div> <!-- Log in Button -->
+                            
+                            <div class="form-group row justify-content-center">
+                                <div class="col-9"><a href="myaccount.html" type="submit" value="Log in" class="btn btn-block btn-info text-uppercase rounded-0">Log in</a></div>
+                            </div>
+                        </form><div class="form-group row justify-content-center">OR</div></div>
+                                        <div class="col-sm-9"><button type="button" class="btn btn-icon btn-block text-left "><span><img src="https://img.icons8.com/color/48/000000/google-logo2.png" class="img-fluid mr-1" width="25"></span> Sign in with Google</button></div>
+                                        <div class="col-sm-9 mt-2"><button type="button" class="btn btn-icon btn-block text-left "><span><img src="https://i.imgur.com/URmkevm.png" class="img-fluid mr-1" width="25"></span> Sign in with Facebook</button> </div>
+                                        <div class="col-sm-9 mt-2"><button type="button" class="btn btn-icon btn-block text-left "><span><img src="https://img.icons8.com/color/48/000000/twitter.png" class="img-fluid mr-1" width="25"></span> Sign in with Twitter</button> </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--modal sign up -->
+<div id="my-modal-2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered justify-content-center " role="document">
+            <div class="modal-content border-0 mx-3">
+                <div class="modal-body p-0">
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="card-header bg-white pb-0 border-0">
+                                    <div class="row">
+                                        <div class="col text-right"><img class="img-fluid m-3 cross" src="https://retohercules.com/images/white-close-icon-png-3.png" data-dismiss="modal" alt="Image result for close png" width="17" height="17"></div>
+                                    </div>
+                                </div>
+                                <div class="card-body pt-0">
+                                    <div class="row justify-content-center text-center">
+                                        <div class="col">
+                                            <p class="mb-2"><b>Sign up</b></p><small class="px-sm-5 px-2">Create an account to unlock all the benefits of service provider.</small>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+
+                                       
+                                        
+
+                                        <div class="col-sm-9 mt-5"><button type="button" class="btn btn-icon btn-block text-left "><span><i class="fa fa-user img-fluid mr-1" aria-hidden="true"></i></span> Sign up as User</button></div>
+                                        <div class="col-sm-9 mt-2"><button type="button" class="btn btn-icon btn-block text-left "><span><i class="fa fa-users img-fluid mr-1" aria-hidden="true"></i></span>Sign up as Organization</button> </div>
+                                        <div class="col-sm-9 mt-2"><button type="button" class="btn btn-icon btn-block text-left "><span><i class="fa fa-building img-fluid mr-1" aria-hidden="true"></i></span>Sign up as Service provider</button> </div>
+                                    </div>
+                                    <div class="row justify-content-center my-5">
+                                        <div class="col-10">
+                                            <div class="custom-control custom-checkbox"><input id="my-input" class="custom-control-input" type="checkbox" name="" value="true"><label for="my-input" class="custom-control-label"><span>I'm not interested in update about products and service. </span></label></div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-auto pt-auto text-center ">
+                                        <div class="col mt-auto pt-auto">
+                                            <a href="login.html" class="btn btn-info rounded-0 text-white text-uppercase signin">Sign UP</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
