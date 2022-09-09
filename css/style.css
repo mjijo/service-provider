@@ -3207,3 +3207,43 @@ td {
 .date .drp-buttons {
     display: none !important
 }
+
+
+/******** My Account *********/
+
+.nav-sidebar {
+    background-color: #673AB7;
+
+}
+
+.nav-sidebar  ul{
+    padding: 0;
+    display: block;
+    width: 100%;
+    
+}
+
+.nav-sidebar  ul li{
+    list-style: none;
+    display: block;
+    border-bottom:1px solid rgba(255, 255, 255, .05)
+    
+}
+
+.nav-sidebar  ul li a {
+    color: #fff;
+}
+
+.nav-sidebar  ul li a:hover {
+    color: #ccc;
+}
+
+.nav-sidebar li .nav-item { 
+    display: block !important;
+ 
+    
+}
+
+.nav-sidebar .nav-link {
+    display: block;
+}
