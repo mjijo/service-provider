@@ -3375,3 +3375,45 @@ track .card {
     margin: 10px 0 20px 0;
     font-size: 22px;
 }
+
+/* Featured */
+.featured {
+    background:#fff;
+    margin-bottom: 1.5rem;
+    
+}
+.featured-icon {
+    background:#000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display:inline-block;
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    
+    
+
+}
+
+.featured-icon i {
+    color:#fff;
+    font-size: 20px;      
+}
+
+.featured-text h4 {
+    text-transform: uppercase;
+    color:#993399;
+    font-weight:600;
+    font-size: 16px;
+    
+}
+
+
+@media screen and (max-width: 622px) {
+    .featured-text h4 {
+        
+        font-size:16px;
+        
+    }
+}
