@@ -3419,3 +3419,11 @@ track .card {
 }
 
 .gray {background-color:#fff; width: 250px;}
+
+.gallery {
+   
+}
+
+.gallery img{
+    width: 33%;
+}
