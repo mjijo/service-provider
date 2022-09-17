@@ -241,12 +241,34 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="invoice.html">
-              <i class="ti-receipt
-              menu-icon"></i>
-              <span class="menu-title">Invoices</span>
+            <a class="nav-link" data-toggle="collapse" href="#quotation" aria-expanded="false" aria-controls="ui-basic">
+              <i class="ti-calendar menu-icon"></i>
+              <span class="menu-title">Quotations</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="quotation">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="quotation.html">Quotations</a></li>
+                <li class="nav-item"> <a class="nav-link" href="add-quotation.html">Add Quotation</a></li>
+                
+              </ul>
+            </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#invoice" aria-expanded="false" aria-controls="ui-basic">
+              <i class="ti-receipt menu-icon"></i>
+              <span class="menu-title">Invoices</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="invoice">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="invoice.html">Invoices</a></li>
+                <li class="nav-item"> <a class="nav-link" href="add-invoice.html">Add Invoice</a></li>
+                
+              </ul>
+            </div>
+          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="#">
               <i class="ti-thumb-up menu-icon"></i>
@@ -359,9 +381,9 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Add Quotation</h4>
+                  <h4 class="card-title">Add Invoice</h4>
                   <p class="card-description">
-                    Quotation Info
+                    Invoice Info
                   </p>
                   <hr>
 
