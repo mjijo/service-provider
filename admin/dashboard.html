@@ -254,12 +254,20 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="invoice.html">
-              <i class="ti-receipt
-              menu-icon"></i>
+            <a class="nav-link" data-toggle="collapse" href="#invoice" aria-expanded="false" aria-controls="ui-basic">
+              <i class="ti-receipt menu-icon"></i>
               <span class="menu-title">Invoices</span>
+              <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="invoice">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="invoice.html">Invoices</a></li>
+                <li class="nav-item"> <a class="nav-link" href="add-invoice.html">Add Invoice</a></li>
+                
+              </ul>
+            </div>
           </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="#">
               <i class="ti-thumb-up menu-icon"></i>

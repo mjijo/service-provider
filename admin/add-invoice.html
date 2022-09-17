@@ -359,186 +359,193 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Quotations</h4>
+                  <h4 class="card-title">Add Quotation</h4>
                   <p class="card-description">
-                    View Quotations
+                    Quotation Info
                   </p>
                   <hr>
-                  <div class="mail-option">
-                    <div class="chk-all">
-                        <input type="checkbox" class="mail-checkbox mail-group-checkbox">
-                        <div class="btn-group">
-                            <a data-toggle="dropdown" href="#" class="btn mini all" aria-expanded="false">
-                                All
-                                <i class="fa fa-angle-down "></i>
-                            </a>
-                            
+
+                  <form class="form-sample">
+                    <!-- <p class="card-description">
+                      Customers Names
+                    </p> -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">First Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control">
+                          </div>
                         </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Last Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="btn-group">
-                      <a href="add-quotation.html" class="btn btn-success"><i class="ti-plus mr-1"></i>Add Quotation</a>
+                    
+                    
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Company Name</label>
+                          <input type="text" class="form-control" placeholder="">
+                        </div>
+                      </div>
+                      
                     </div>
-                    <div class="btn-group">
-                        <a data-original-title="Refresh" data-placement="top" data-toggle="dropdown" href="#" class="btn mini tooltips">
-                            <i class="ti-reload"></i>
-                        </a>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Email Address</label>
+                          <input type="text" class="form-control" placeholder="test@test.co.ke">
+                        </div>
+                      </div>
+                      
                     </div>
-
-                    <div class="btn-group hidden-phone">
-                        <a data-toggle="dropdown" href="#" class="btn mini blue" aria-expanded="false">
-                            Action
-                            <i class="ti-angle-down "></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="ti-pencil"></i> Edit</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#"><i class="ti-trash"></i> Delete</a></li>
-                        </ul>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Phone</label>
+                          <input type="text" class="form-control" >
+                        </div>
+                      </div>
+                      
                     </div>
-                    <div class="btn-group">
-                        <a data-toggle="dropdown" href="#" class="btn mini blue">
-                            Status
-                            <i class="ti-angle-down "></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#"><i class="ti-check"></i> Activate</a></li>
-                            <li><a href="#"><i class="ti-alert"></i> Deactivate</a></li>
-                            
-                        </ul>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Country / Region</label>
+                          <input type="text" class="form-control" placeholder="Nairob - Kenya">
+                        </div>
+                      </div>
+                      
                     </div>
-
-                    <ul class="unstyled inbox-pagination">
-                        <li><span>1-50 of 234</span></li>
-                        <li>
-                            <a class="np-btn" href="#"><i class="ti-angle-left  pagination-left"></i></a>
-                        </li>
-                        <li>
-                            <a class="np-btn" href="#"><i class="ti-angle-right pagination-right"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                  <div class="table-responsive pt-3">
-                    <table class="table table-bordered">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Street Address 1</label>
+                          <input type="text" class="form-control" placeholder="House no and Street name">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Street Address 2</label>
+                          <input type="text" class="form-control" placeholder="House no and Street name">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>County (optional)</label>
+                          <input type="text" class="form-control" >
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Postcode</label>
+                          <input type="text" class="form-control" >
+                        </div>
+                      </div>
+                      
+                    </div> 
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Attach Files</label>
+                          <input type="file" name="img[]" class="file-upload-default">
+                          <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Scanned ID Image">
+                            <span class="input-group-append">
+                              <button class="file-upload-browse btn btn-primary" type="button"><i class="ti-clip mr-1"></i> Attach</button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>             
+                     <p class="card-description">
+                      Job Information
+                    </p> 
+                    <table class="table table-condensed table-hover">
                       <thead>
                         <tr>
-                          <th>
-                            #
-                          </th>
-                          <th>
-                           ID
-                          </th>
-                          <th>
-                           From
-                          </th>
+                          <th class="span1"></th>
+                          <th class="span2">Estimated cost ($)</th>
+                          <th class="span2">Estimated Time (in hours)</th>
+                          <th class="span2"></th>
                           
-                          <th>
-                            To
-                          </th>
-                          <th>
-                            Date
-                          </th>
-                          <th>
-                            Amount
-                          </th>
-                         
-                         
-                          <th>
-                            Status
-                          </th>
-                          <th>
-                            <i class="ti-eye"></i>
-                          </th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr class="table-info">
-                          <td>
-                            <input type="checkbox"> <a href="#"></a>
-                          </td>
-                          <td>
-                          0001
-                          </td>
-                          <td>
-                           <a href="add-quotation.html">Company ltd</a> 
-                          </td>
-                          <td>
-                            Robert George
-                          </td>
-                          <td>
-                            14 may 2020
-                          </td>
-                          <td>
-                            $33541
-                          </td>
-                          <td>
-                            <button class="btn btn-success btn-sm rounded-pill"><i>Approved</i></button>
-                          </td>
-                          <td>
-                            <a href="view-quotation.html"><i class="ti-eye mr-1"></i>View</a>
-                          </td>
+                        <tr>
+                          <td>Product name</a></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><strong><button class="btn btn-danger btn-sm rounded-pill"><i class="ti-trash mr-1"></i> delete</button></strong></td>
                           
-                            
                         </tr>
-                        <tr class="table-info">
-                          <td>
-                            <input type="checkbox"> <a href="#"></a>
-                          </td>
-                          <td>
-                          0001
-                          </td>
-                          <td>
-                           <a href="add-quotation.html">Company ltd</a> 
-                          </td>
-                          <td>
-                            Robert George
-                          </td>
-                          <td>
-                            14 may 2020
-                          </td>
-                          <td>
-                            $33541
-                          </td>
-                          <td>
-                            <button class="btn btn-success btn-sm rounded-pill"><i>Approved</i></button>
-                          </td>
-                          <td>
-                            <a href="view-quotation.html"><i class="ti-eye mr-1"></i>View</a>
-                          </td>
+                        <tr>
+                          <td>Product name 2</a></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><strong><button class="btn btn-success btn-sm rounded-pill"><i class="ti-plus mr-1"></i> Add Product</button></strong></td>
                           
-                            
                         </tr>
-                        <tr class="table-info">
-                          <td>
-                            <input type="checkbox"> <a href="#"></a>
-                          </td>
-                          <td>
-                          0001
-                          </td>
-                          <td>
-                           <a href="add-quotation.html">Company ltd</a> 
-                          </td>
-                          <td>
-                            Robert George
-                          </td>
-                          <td>
-                            14 may 2020
-                          </td>
-                          <td>
-                            $33541
-                          </td>
-                          <td>
-                            <button class="btn btn-success btn-sm rounded-pill"><i>Approved</i></button>
-                          </td>
-                          <td>
-                            <a href="view-quotation.html"><i class="ti-eye mr-1"></i>View</a>
-                          </td>
+                        <tr>
+                          <td>Total</a></td>
+                          <td><input type="text" class="form-control" placeholder="$0"></td>
+                          <td></td>
+                          <td></td>
                           
-                            
                         </tr>
-                        
+                        <hr >
                       </tbody>
+
                     </table>
-                  </div>
+                    <hr>  
+                    <p class="card-description">
+                      From Name
+                    </p> 
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">First Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Last Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    
+                  
+                    
+                    <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
+                    <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
+                    <button type="submit" class="btn btn-info mr-2">Send Email <i class="ti-arrow-right"></i></button>
+                    <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
+                  </form>
                 </div>
               </div>
             </div>

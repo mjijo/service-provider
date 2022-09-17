@@ -359,11 +359,64 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Invoice</h4>
+                  <h4 class="card-title">Invoices</h4>
                   <p class="card-description">
-                    View invoices
+                    View Invoices
                   </p>
                   <hr>
+                  <div class="mail-option">
+                    <div class="chk-all">
+                        <input type="checkbox" class="mail-checkbox mail-group-checkbox">
+                        <div class="btn-group">
+                            <a data-toggle="dropdown" href="#" class="btn mini all" aria-expanded="false">
+                                All
+                                <i class="fa fa-angle-down "></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                      <a href="add-invoice.html" class="btn btn-success"><i class="ti-plus mr-1"></i>Add Invoice</a>
+                    </div>
+                    <div class="btn-group">
+                        <a data-original-title="Refresh" data-placement="top" data-toggle="dropdown" href="#" class="btn mini tooltips">
+                            <i class="ti-reload"></i>
+                        </a>
+                    </div>
+
+                    <div class="btn-group hidden-phone">
+                        <a data-toggle="dropdown" href="#" class="btn mini blue" aria-expanded="false">
+                            Action
+                            <i class="ti-angle-down "></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="ti-pencil"></i> Edit</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><i class="ti-trash"></i> Delete</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a data-toggle="dropdown" href="#" class="btn mini blue">
+                            Status
+                            <i class="ti-angle-down "></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="ti-check"></i> Activate</a></li>
+                            <li><a href="#"><i class="ti-alert"></i> Deactivate</a></li>
+                            
+                        </ul>
+                    </div>
+
+                    <ul class="unstyled inbox-pagination">
+                        <li><span>1-50 of 234</span></li>
+                        <li>
+                            <a class="np-btn" href="#"><i class="ti-angle-left  pagination-left"></i></a>
+                        </li>
+                        <li>
+                            <a class="np-btn" href="#"><i class="ti-angle-right pagination-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
                   <div class="table-responsive pt-3">
                     <table class="table table-bordered">
                       <thead>
@@ -372,7 +425,7 @@
                             #
                           </th>
                           <th>
-                           ID no.
+                           ID
                           </th>
                           <th>
                            From
@@ -390,20 +443,23 @@
                          
                          
                           <th>
-                            Action
+                            Status
+                          </th>
+                          <th>
+                            <i class="ti-eye"></i>
                           </th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr class="table-info">
                           <td>
-                            1
+                            <input type="checkbox"> <a href="#"></a>
                           </td>
                           <td>
                           0001
                           </td>
                           <td>
-                            Company ltd
+                           <a href="add-invoice.html">Company ltd</a> 
                           </td>
                           <td>
                             Robert George
@@ -415,127 +471,71 @@
                             $33541
                           </td>
                           <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <a href="view-invoice.html" class="btn bg-success btn-sm"><i class="ti-eye"></i> View</a>
-                                <button type="button" class="btn btn-danger btn-sm"><i class="ti-trash"></i> Delete</button>
-                                
-                              </div>
+                            <button class="btn btn-success btn-sm rounded-pill"><i>Approved</i></button>
+                          </td>
+                          <td>
+                            <a href="view-invoice.html"><i class="ti-eye mr-1"></i>View</a>
                           </td>
                           
                             
                         </tr>
                         <tr class="table-info">
                           <td>
-                            1
+                            <input type="checkbox"> <a href="#"></a>
                           </td>
                           <td>
                           0001
                           </td>
                           <td>
-                            Non-Company ltd
+                           <a href="add-invoice.html">Company ltd</a> 
                           </td>
                           <td>
                             Robert George
                           </td>
                           <td>
-                            14 may 2020 
+                            14 may 2020
                           </td>
                           <td>
                             $33541
                           </td>
                           <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn bg-success btn-sm"><i class="ti-eye "></i> view</button>
-                                <button type="button" class="btn btn-danger btn-sm"><i class="ti-trash"></i> Delete</button>
-                              </div>
+                            <button class="btn btn-success btn-sm rounded-pill"><i>Approved</i></button>
+                          </td>
+                          <td>
+                            <a href="view-invoice.html"><i class="ti-eye mr-1"></i>View</a>
                           </td>
                           
                             
                         </tr>
                         <tr class="table-info">
                           <td>
-                            1
+                            <input type="checkbox"> <a href="#"></a>
                           </td>
                           <td>
                           0001
                           </td>
                           <td>
-                            Company ltd
+                           <a href="add-invoice.html">Company ltd</a> 
                           </td>
                           <td>
                             Robert George
                           </td>
                           <td>
-                            14 may 2020 
+                            14 may 2020
                           </td>
                           <td>
                             $33541
                           </td>
                           <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn bg-success btn-sm" data-toggle="modal" data-target="#myModal" id="Modal_button"><i class="ti-eye "></i> view</button>
-                                <button type="button" class="btn btn-danger btn-sm"><i class="ti-trash"></i> Delete</button>
-                              </div>
+                            <button class="btn btn-success btn-sm rounded-pill"><i>Approved</i></button>
+                          </td>
+                          <td>
+                            <a href="view-invoice.html"><i class="ti-eye mr-1"></i>View</a>
                           </td>
                           
                             
                         </tr>
-                        <tr class="table-info">
-                          <td>
-                            1
-                          </td>
-                          <td>
-                          0001
-                          </td>
-                          <td>
-                            Non-Company ltd
-                          </td>
-                          <td>
-                            Robert George
-                          </td>
-                          <td>
-                            14 may 2020 
-                          </td>
-                          <td>
-                            $33541
-                          </td>
-                          <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn bg-success btn-sm"><i class="ti-eye "></i> view</button>
-                                <button type="button" class="btn btn-danger btn-sm"><i class="ti-trash"></i> Delete</button>
-                              </div>
-                          </td>
-                          
-                            
-                        </tr>
-                        <tr class="table-info">
-                          <td>
-                            1
-                          </td>
-                          <td>
-                          0001
-                          </td>
-                          <td>
-                            Company ltd
-                          </td>
-                          <td>
-                            Robert George
-                          </td>
-                          <td>
-                            14 may 2020 
-                          </td>
-                          <td>
-                            $33541
-                          </td>
-                          <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn bg-success btn-sm"><i class="ti-eye "></i> view</button>
-                                <button type="button" class="btn btn-danger btn-sm"><i class="ti-trash"></i> Delete</button>
-                              </div>
-                          </td>
-                          
-                            
-                        </tr>
+                        
                       </tbody>
                     </table>
                   </div>
