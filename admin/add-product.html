@@ -346,107 +346,164 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Messages</h4>
-                  
+                  <h4 class="card-title">Product</h4>
+                  <p class="card-description">
+                    Create Product
+                  </p>
                   <hr>
-                  <div class="inbox-body">
-                    <div class="mail-option">
-                        <div class="chk-all">
-                            <input type="checkbox" class="mail-checkbox mail-group-checkbox">
-                            <div class="btn-group">
-                                <a data-toggle="dropdown" href="#" class="btn mini all" aria-expanded="false">
-                                    All
-                                    <i class="fa fa-angle-down "></i>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#"> None</a></li>
-                                    <li><a href="#"> Read</a></li>
-                                    <li><a href="#"> Unread</a></li>
-                                </ul>
-                            </div>
+                  <form class="form-sample">
+                    <p class="card-description">
+                      Product info
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Select Category</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>Autospares</option>
+                              <option>Doctors</option>
+                              <option>Surveyors</option>
+                              <option>Assessors</option>
+                            </select>
+                          </div>
                         </div>
-
-                        <div class="btn-group">
-                            <a data-original-title="Refresh" data-placement="top" data-toggle="dropdown" href="#" class="btn mini tooltips">
-                                <i class="ti-reload"></i>
-                            </a>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Make</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>Toyota</option>
+                              <option>Subaru</option>
+                              <option>Audi</option>
+                              <option>Benz</option>
+                            </select>
+                          </div>
                         </div>
-                        <div class="btn-group hidden-phone">
-                            <a data-toggle="dropdown" href="#" class="btn mini blue" aria-expanded="false">
-                                More
-                                <i class="ti-angle-down "></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#"><i class="ti-pencil"></i> Mark as Read</a></li>
-                                <li><a href="#"><i class="ti-alert"></i> Spam</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#"><i class="ti-trash"></i> Delete</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group">
-                            <a data-toggle="dropdown" href="#" class="btn mini blue">
-                                Move to
-                                <i class="ti-angle-down "></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#"><i class="ti-pencil"></i> Mark as Read</a></li>
-                                <li><a href="#"><i class="ti-alert"></i> Spam</a></li>
-                                <li class="divider"></li>
-                                <li><a href="#"><i class="ti-trash"></i> Delete</a></li>
-                            </ul>
-                        </div>
-
-                        <ul class="unstyled inbox-pagination">
-                            <li><span>1-50 of 234</span></li>
-                            <li>
-                                <a class="np-btn" href="#"><i class="ti-angle-left  pagination-left"></i></a>
-                            </li>
-                            <li>
-                                <a class="np-btn" href="#"><i class="ti-angle-right pagination-right"></i></a>
-                            </li>
-                        </ul>
+                      </div>
                     </div>
-                  <table class="table table-condensed table-hover">
-                    <thead>
-                      <tr>
-                        <th class="span1"></th>
-                        <th class="span2"></th>
-                        <th class="span2"></th>
-                        <th class="span9"></th>
-                        <th class="span2"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><input type="checkbox"> <a href="#"><i class="ti-star ml-1"></i></a></td>
-                        <td><a href="message-details.html"><strong>John Doe</strong></a></td>
-                        <td><label class="badge badge-info float-sm-right">Notifications</label></td>
-                        <td><strong>Message body goes here</strong></td>
-                        <td><strong>11:23 PM</strong></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"> <a href="#"><i class="ti-star ml-1"></i></a></td>
-                        <td><a href="message-details.html">John Doe</a></td>
-                        <td><label class="badge badge-info float-sm-right">Notifications</label></td>
-                        <td>Message body goes here</td>
-                        <td>Sept4</td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"> <a href="#"><i class="ti-star ml-1"></i></a></td>
-                        <td><a href="message-details.html"><strong>John Doe</strong></a></td>
-                        <td><label class="badge badge-info float-sm-right">Notifications</label></td>
-                        <td><strong>Message body goes here</strong></td>
-                        <td><strong>Sept3</strong></td>
-                      </tr>
-                      <tr>
-                        <td><input type="checkbox"> <a href="#"><i class="ti-star ml-1"></i></a></td>
-                        <td><strong>John Doe</strong></td>
-                        <td><label class="badge badge-info float-sm-right">Notifications</label></td>
-                        <td><strong>Message body goes here</strong></td>
-                        <td><strong>Sept3</strong></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Body Part</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>Oil filter</option>
+                              <option>Oil</option>
+                              <option>Break Pads</option>
+                              <option>Assessors</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Condition</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>New</option>
+                              <option>Used</option>
+                              
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Product Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      
+                    </div> 
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Color</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      
+                    </div> 
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Upload Images</label>
+                            <input type="file" name="img[]" class="file-upload-default">
+                            <div class="input-group col-xs-12">
+                              <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Scanned ID Image">
+                              <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Product Description</label>
+                            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Product Information</label>
+                            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Quantity</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        
+                      </div>
+                    <p class="card-description">
+                      Price
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Current price</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="$0.00" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Price Off</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="$0.00" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
+                    <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
+                    <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            
           </div>
         </div>
         <!-- content-wrapper ends -->
