@@ -381,173 +381,95 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Services</h4>
-                  <p class="card-description">
-                    Create Services
-                  </p>
+                  <h4 class="card-title">Categories</h4>
+                  
                   <hr>
-                  <form class="form-sample">
-                    <p class="card-description">
-                      Services info
-                    </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Select Category</label>
-                          <div class="col-sm-9">
-                            <select class="form-control">
-                              <option>Lawyers</option>
-                              <option>Doctors</option>
-                              <option>Surveyors</option>
-                              <option>Assessors</option>
-                            </select>
-                          </div>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <form class="form-sample">
+                        <div class="form-group">
+                          <label for="exampleInputName1">Name</label>
+                          <input type="text" class="form-control">
+                          <p class="small">The name is how it appears on your site.</p>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Location</label>
-                          <div class="col-sm-9">
-                            <select class="form-control">
-                              <option>English</option>
-                              <option>French</option>
-                              <option>German</option>
-                              <option>Swahili</option>
-                            </select>
-                          </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Slug</label>
+                          <input type="text" class="form-control">
+                          <p class="small">The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</p>
                         </div>
-                      </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Parent Category</label>
+                          <select class="form-control">
+                            <option>Lawyers</option>
+                            <option>Doctors</option>
+                            <option>Surveyors</option>
+                            <option>Assessors</option>
+                          </select>
+                          <p class="small">Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have children categories for Bebop and Big Band. Totally optional.</p>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Parent Category</label>
+                          <textarea class="form-control" rows="8"></textarea>
+                          <p class="small">The description is not prominent by default; however, some themes may show it.</p>
+                        </div>
+                        <button class="btn btn-primary">Add New Category</button>
+                      </form>
                     </div>
-                    
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Email</label>
-                            <div class="col-sm-9">
-                              <input class="form-control" placeholder="Email"/>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Phone</label>
-                          <div class="col-sm-9">
-                              <input class="form-control" placeholder="Phone"/>                         
-                          </div>
-                          
-                        </div>
-                      </div>
+                    <div class="col-md-7">
+                      <div class="btn-group mb-2 hidden-phone">
+                        <a data-toggle="dropdown" href="#" class="btn btn-outline-primary" aria-expanded="false">
+                            Bulk Action
+                            <i class="ti-angle-down "></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="ti-pencil ml-2"></i> Edit</a></li>
+                            <li><a href="#"><i class="ti-trash ml-2"></i> Delete</a></li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-success">Apply</a>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label>Upload Images</label>
-                            <input type="file" name="img[]" class="file-upload-default">
-                            <div class="input-group col-xs-12">
-                              <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Scanned ID Image">
-                              <span class="input-group-append">
-                                <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label>Professional Bio</label>
-                            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-                          </div>
-                        </div>
-                        
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label>Specialitie</label>
-                            <input type="text" class="form-control">
-                          </div>
-                        </div>
-                        
-                      </div>
-                    <p class="card-description">
-                      Fee
-                    </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Querry</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="$0.00" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Phone/Video call</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="$0.00" />
-                          </div>
-                        </div>
-                      </div>
+                      <table class="table table-bordered">
+                        <thead class="thead-light">
+                          <tr>
+                            <th class="span1"><input type="checkbox"></th>
+                            <th class="span2">Name</th>
+                            <th class="span2">Slug</th>
+                            <th class="span9">Count</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="edit-category.html">Auto Spares</a></td>
+                            <td>auto-spares</td>
+                            <td><strong>4</strong></td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="edit-category.html">Auto Spares</a></td>
+                            <td>auto-spares</td>
+                            <td><strong>4</strong></td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="edit-category.html">Auto Spares</a></td>
+                            <td>auto-spares</td>
+                            <td><strong>4</strong></td>
+                          </tr>
+                        </tbody>
+                        <thead class="thead-light">
+                          <tr>
+                            <th class="span1"><input type="checkbox"></th>
+                            <th class="span2">Name</th>
+                            <th class="span2">Slug</th>
+                            <th class="span9">Count</th>
+                            
+                          </tr>
+                        </thead>
+                      </table>
                     </div>
-                    <p class="card-description">
-                      Address
-                    </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Address</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Postcode</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">City</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Country</label>
-                          <div class="col-sm-9">
-                            <select class="form-control">
-                              <option>America</option>
-                              <option>Italy</option>
-                              <option>Russia</option>
-                              <option>Britain</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
-                    <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
-                    <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            
-            
-            
-            
-          </div>
+                  </div>
+                 </div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
