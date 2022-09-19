@@ -381,72 +381,161 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Create Auction</h4>
+                  <h4 class="card-title">Services</h4>
                   <p class="card-description">
-                    Create auctions and upload images of the item..
+                    Create Services
                   </p>
                   <hr>
-                  <form class="forms-sample">
-                    <div class="form-group">
-                      <label for="exampleInputName1">Item Name</label>
-                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputName1">Reserved Price</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text bg-primary text-white">Ksh</span>
+                  <form class="form-sample">
+                    <p class="card-description">
+                      Services info
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Select Category</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>Lawyers</option>
+                              <option>Doctors</option>
+                              <option>Surveyors</option>
+                              <option>Assessors</option>
+                            </select>
+                          </div>
                         </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                        <div class="input-group-append">
-                          <span class="input-group-text">.00</span>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Location</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>English</option>
+                              <option>French</option>
+                              <option>German</option>
+                              <option>Swahili</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                     </div>
                     
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Category Type</label>
-                        <select class="form-control" id="exampleSelectGender">
-                          <option>Salvage</option>
-                          <option>Non-Salvage</option>
-                        </select>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Email</label>
+                            <div class="col-sm-9">
+                              <input class="form-control" placeholder="Email"/>
+                            </div>
+                          </div>
                       </div>
-
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Description</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                      </div> 
-                    <div class="form-group">
-                      <label>Upload Images</label>
-                      <input type="file" name="img[]" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Phone</label>
+                          <div class="col-sm-9">
+                              <input class="form-control" placeholder="Phone"/>                         
+                          </div>
+                          
+                        </div>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Due Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="mm/dd/yy">
+                    <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Upload Images</label>
+                            <input type="file" name="img[]" class="file-upload-default">
+                            <div class="input-group col-xs-12">
+                              <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Scanned ID Image">
+                              <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Professional Bio</label>
+                            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Specialitie</label>
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                        
+                      </div>
+                    <p class="card-description">
+                      Fee
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Querry</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="$0.00" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Phone/Video call</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="$0.00" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Created by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
+                    <p class="card-description">
+                      Address
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Address</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Postcode</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Date Created</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">City</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Country</label>
+                          <div class="col-sm-9">
+                            <select class="form-control">
+                              <option>America</option>
+                              <option>Italy</option>
+                              <option>Russia</option>
+                              <option>Britain</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
-                    </div>
-                    
                     <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
                     <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
                     <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>

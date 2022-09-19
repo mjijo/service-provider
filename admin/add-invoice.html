@@ -381,74 +381,191 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Create Auction</h4>
+                  <h4 class="card-title">Add Invoice</h4>
                   <p class="card-description">
-                    Create auctions and upload images of the item..
+                    Invoice Info
                   </p>
                   <hr>
-                  <form class="forms-sample">
-                    <div class="form-group">
-                      <label for="exampleInputName1">Item Name</label>
-                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputName1">Reserved Price</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text bg-primary text-white">Ksh</span>
+
+                  <form class="form-sample">
+                    <!-- <p class="card-description">
+                      Customers Names
+                    </p> -->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">First Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control">
+                          </div>
                         </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                        <div class="input-group-append">
-                          <span class="input-group-text">.00</span>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Last Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control">
+                          </div>
                         </div>
                       </div>
                     </div>
                     
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Category Type</label>
-                        <select class="form-control" id="exampleSelectGender">
-                          <option>Salvage</option>
-                          <option>Non-Salvage</option>
-                        </select>
+                    
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Company Name</label>
+                          <input type="text" class="form-control" placeholder="">
+                        </div>
                       </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Email Address</label>
+                          <input type="text" class="form-control" placeholder="test@test.co.ke">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Phone</label>
+                          <input type="text" class="form-control" >
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Country / Region</label>
+                          <input type="text" class="form-control" placeholder="Nairob - Kenya">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Street Address 1</label>
+                          <input type="text" class="form-control" placeholder="House no and Street name">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Street Address 2</label>
+                          <input type="text" class="form-control" placeholder="House no and Street name">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>County (optional)</label>
+                          <input type="text" class="form-control" >
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Postcode</label>
+                          <input type="text" class="form-control" >
+                        </div>
+                      </div>
+                      
+                    </div> 
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>Attach Files</label>
+                          <input type="file" name="img[]" class="file-upload-default">
+                          <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Scanned ID Image">
+                            <span class="input-group-append">
+                              <button class="file-upload-browse btn btn-primary" type="button"><i class="ti-clip mr-1"></i> Attach</button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>             
+                     <p class="card-description">
+                      Job Information
+                    </p> 
+                    <table class="table table-condensed table-hover">
+                      <thead>
+                        <tr>
+                          <th class="span1"></th>
+                          <th class="span2">Estimated cost ($)</th>
+                          <th class="span2">Estimated Time (in hours)</th>
+                          <th class="span2"></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Product name</a></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><strong><button class="btn btn-danger btn-sm rounded-pill"><i class="ti-trash mr-1"></i> delete</button></strong></td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Product name 2</a></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><input type="text" class="form-control"></td>
+                          <td><strong><button class="btn btn-success btn-sm rounded-pill"><i class="ti-plus mr-1"></i> Add Product</button></strong></td>
+                          
+                        </tr>
+                        <tr>
+                          <td>Total</a></td>
+                          <td><input type="text" class="form-control" placeholder="$0"></td>
+                          <td></td>
+                          <td></td>
+                          
+                        </tr>
+                        <hr >
+                      </tbody>
 
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Description</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                      </div> 
-                    <div class="form-group">
-                      <label>Upload Images</label>
-                      <input type="file" name="img[]" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
+                    </table>
+                    <hr>  
+                    <p class="card-description">
+                      From Name
+                    </p> 
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">First Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Due Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="mm/dd/yy">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Created by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Date Created</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
-                    </div>
+                      <div class="col-md-6">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label">Last Name</label>
+                          <div class="col-sm-9">
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    
+                  
                     
                     <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
                     <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
+                    <button type="submit" class="btn btn-info mr-2">Send Email <i class="ti-arrow-right"></i></button>
                     <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
                   </form>
                 </div>
@@ -487,6 +604,7 @@
   <!-- Custom js for this page-->
   <script src="js/file-upload.js"></script>
   <!-- End custom js for this page-->
+  
 </body>
 
 </html>

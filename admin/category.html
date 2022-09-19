@@ -381,84 +381,95 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Create Auction</h4>
-                  <p class="card-description">
-                    Create auctions and upload images of the item..
-                  </p>
+                  <h4 class="card-title">Categories</h4>
+                  
                   <hr>
-                  <form class="forms-sample">
-                    <div class="form-group">
-                      <label for="exampleInputName1">Item Name</label>
-                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputName1">Reserved Price</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text bg-primary text-white">Ksh</span>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <form class="form-sample">
+                        <div class="form-group">
+                          <label for="exampleInputName1">Name</label>
+                          <input type="text" class="form-control">
+                          <p class="small">The name is how it appears on your site.</p>
                         </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                        <div class="input-group-append">
-                          <span class="input-group-text">.00</span>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Slug</label>
+                          <input type="text" class="form-control">
+                          <p class="small">The “slug” is the URL-friendly version of the name. It is usually all lowercase and contains only letters, numbers, and hyphens.</p>
                         </div>
-                      </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Parent Category</label>
+                          <select class="form-control">
+                            <option>Lawyers</option>
+                            <option>Doctors</option>
+                            <option>Surveyors</option>
+                            <option>Assessors</option>
+                          </select>
+                          <p class="small">Categories, unlike tags, can have a hierarchy. You might have a Jazz category, and under that have children categories for Bebop and Big Band. Totally optional.</p>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Parent Category</label>
+                          <textarea class="form-control" rows="8"></textarea>
+                          <p class="small">The description is not prominent by default; however, some themes may show it.</p>
+                        </div>
+                        <button class="btn btn-primary">Add New Category</button>
+                      </form>
                     </div>
-                    
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Category Type</label>
-                        <select class="form-control" id="exampleSelectGender">
-                          <option>Salvage</option>
-                          <option>Non-Salvage</option>
-                        </select>
-                      </div>
-
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Description</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                      </div> 
-                    <div class="form-group">
-                      <label>Upload Images</label>
-                      <input type="file" name="img[]" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
-                      </div>
+                    <div class="col-md-7">
+                      <div class="btn-group mb-2 hidden-phone">
+                        <a data-toggle="dropdown" href="#" class="btn btn-outline-primary" aria-expanded="false">
+                            Bulk Action
+                            <i class="ti-angle-down "></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="ti-pencil ml-2"></i> Edit</a></li>
+                            <li><a href="#"><i class="ti-trash ml-2"></i> Delete</a></li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-success">Apply</a>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Due Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="mm/dd/yy">
+                      <table class="table table-bordered">
+                        <thead class="thead-light">
+                          <tr>
+                            <th class="span1"><input type="checkbox"></th>
+                            <th class="span2">Name</th>
+                            <th class="span2">Slug</th>
+                            <th class="span9">Count</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="edit-category.html">Auto Spares</a></td>
+                            <td>auto-spares</td>
+                            <td><strong>4</strong></td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="edit-category.html">Auto Spares</a></td>
+                            <td>auto-spares</td>
+                            <td><strong>4</strong></td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="edit-category.html">Auto Spares</a></td>
+                            <td>auto-spares</td>
+                            <td><strong>4</strong></td>
+                          </tr>
+                        </tbody>
+                        <thead class="thead-light">
+                          <tr>
+                            <th class="span1"><input type="checkbox"></th>
+                            <th class="span2">Name</th>
+                            <th class="span2">Slug</th>
+                            <th class="span9">Count</th>
+                            
+                          </tr>
+                        </thead>
+                      </table>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Created by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Date Created</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
-                    <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
-                    <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            
-            
-            
-            
-          </div>
+                  </div>
+                 </div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->

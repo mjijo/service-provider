@@ -159,7 +159,7 @@
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+     <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="dashboard.html">
@@ -381,76 +381,74 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Create Auction</h4>
+                  <h4 class="card-title">Quotation</h4>
                   <p class="card-description">
-                    Create auctions and upload images of the item..
+                    View Quotation
                   </p>
                   <hr>
-                  <form class="forms-sample">
-                    <div class="form-group">
-                      <label for="exampleInputName1">Item Name</label>
-                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                  <div class="d-flex justify-content-center row">
+                    <div class="col-md-10 align-items-end"><button type="button" class="btn btn-info btn-icon-text">
+                        Print
+                        <i class="ti-printer btn-icon-append"></i>                                                                              
+                      </button>
+                      <button type="button" class="btn btn-warning btn-icon-text">
+                        PDF
+                        <i class="ti-save btn-icon-append"></i>                                                                              
+                      </button>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputName1">Reserved Price</label>
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text bg-primary text-white">Ksh</span>
+                    <div class="col-md-10">
+                        <div class="receipt bg-white p-3 rounded"><img src="images/logo2.png" width="180">
+                            <h4 class="mt-2 mb-3">Your order is confirmed!</h4>
+                            <h6 class="name">Hello John,</h6><span class="fs-12 text-black-50">your order has been confirmed and will be shipped in two days</span>
+                            <hr>
+                            <div class="d-flex flex-row justify-content-between align-items-center order-details">
+                                <div><span class="d-block fs-12">Order date</span><span class="font-weight-bold">12 March 2020</span></div>
+                                <div><span class="d-block fs-12">Order number</span><span class="font-weight-bold">OD44434324</span></div>
+                                <div><span class="d-block fs-12">Payment method</span><span class="font-weight-bold">Credit card</span><i class="ml-1 mb-1 ti-credit-card"></i></div>
+                                <div><span class="d-block fs-12">Shipping Address</span><span class="font-weight-bold text-success">New Delhi</span></div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center product-details">
+                                <div class="d-flex flex-row product-name-image"><img class="rounded" src="images/products/oil-filter.jpg" width="80">
+                                    <div class="d-flex flex-column justify-content-between ml-2">
+                                        <div><span class="d-block font-weight-bold p-name">Ralco formal shirts for men</span><span class="fs-12">Clothes</span></div><span class="fs-12">Qty: 1pcs</span>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h5>$70</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center product-details">
+                                <div class="d-flex flex-row product-name-image"><img class="rounded" src="images/products/oil-filter.jpg" width="80">
+                                    <div class="d-flex flex-column justify-content-between ml-2">
+                                        <div><span class="d-block font-weight-bold p-name">Ralco formal Belt for men</span><span class="fs-12">Accessories</span></div><span class="fs-12">Qty: 1pcs</span>
+                                    </div>
+                                </div>
+                                <div class="product-price">
+                                    <h6>$50</h6>
+                                </div>
+                            </div>
+                            <div class="mt-5 amount row">
+                                <div class="d-flex justify-content-center col-md-6"></div>
+                                <div class="col-md-6">
+                                    <div class="billing">
+                                        <div class="d-flex justify-content-between"><span>Subtotal</span><span class="font-weight-bold">$120</span></div>
+                                        <div class="d-flex justify-content-between mt-2"><span>Shipping fee</span><span class="font-weight-bold">$15</span></div>
+                                        <div class="d-flex justify-content-between mt-2"><span>Tax</span><span class="font-weight-bold">$5</span></div>
+                                        <div class="d-flex justify-content-between mt-2"><span class="text-success">Discount</span><span class="font-weight-bold text-success">$25</span></div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between mt-1"><span class="font-weight-bold">Total</span><span class="font-weight-bold text-success">$165</span></div>
+                                    </div>
+                                </div>
+                            </div><span class="d-block">Expected delivery date</span><span class="font-weight-bold text-success">12 March 2020</span><span class="d-block mt-3 text-black-50 fs-15">We will be sending a shipping confirmation email when the item is shipped!</span>
+                            <hr>
+                            <div class="d-flex justify-content-between align-items-center footer">
+                                <div class="thanks"><span class="d-block font-weight-bold">Thanks for shopping</span><span>Amazon team</span></div>
+                                <div class="d-flex flex-column justify-content-end align-items-end"><span class="d-block font-weight-bold">Need Help?</span><span>Call - 974493933</span></div>
+                            </div>
                         </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                        <div class="input-group-append">
-                          <span class="input-group-text">.00</span>
-                        </div>
-                      </div>
                     </div>
-                    
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Category Type</label>
-                        <select class="form-control" id="exampleSelectGender">
-                          <option>Salvage</option>
-                          <option>Non-Salvage</option>
-                        </select>
-                      </div>
-
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Description</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                      </div> 
-                    <div class="form-group">
-                      <label>Upload Images</label>
-                      <input type="file" name="img[]" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Due Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="mm/dd/yy">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Created by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Date Created</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
-                    <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
-                    <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
-                  </form>
+                </div>
                 </div>
               </div>
             </div>
@@ -487,6 +485,7 @@
   <!-- Custom js for this page-->
   <script src="js/file-upload.js"></script>
   <!-- End custom js for this page-->
+  
 </body>
 
 </html>
