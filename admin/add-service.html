@@ -425,7 +425,7 @@
                       </div>
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Location</label>
+                          <label class="col-sm-3 col-form-label">Service Name</label>
                           <div class="col-sm-9">
                             <select class="form-control">
                               <option>English</option>
@@ -439,28 +439,9 @@
                     </div>
                     
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                            <label class="col-sm-3 col-form-label">Email</label>
-                            <div class="col-sm-9">
-                              <input class="form-control" placeholder="Email"/>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Phone</label>
-                          <div class="col-sm-9">
-                              <input class="form-control" placeholder="Phone"/>                         
-                          </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label>Upload Images</label>
+                            <label>Upload Logo</label>
                             <input type="file" name="img[]" class="file-upload-default">
                             <div class="input-group col-xs-12">
                               <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Scanned ID Image">
@@ -475,6 +456,69 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
+                            <label>Description of the services</label>
+                            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Location Address</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Postal Address</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">City</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Country</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Email</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Phone</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
                             <label>Professional Bio</label>
                             <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
                           </div>
@@ -484,77 +528,162 @@
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
-                            <label>Specialitie</label>
+                            <label>Upload (3 Photos)</label>
+                            <input type="file" name="img[]" class="file-upload-default">
+                            <div class="input-group col-xs-12">
+                              <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Scanned ID Image">
+                              <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Featured</label>
+                            <div class="col-sm-3">
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                                  Yes
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                                  No
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Capture customer reviews</label>
+                            <div class="col-sm-3">
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                                  Enabled
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                                  Disabled
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Rate</label>
+                            <div class="col-sm-3">
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                                  Enabled
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                                  Disabled
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Add Branches</label>
+                            <div class="col-sm-3">
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                                  Yes
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-sm-3">
+                              <div class="form-check">
+                                <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                                  No
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      <p class="card-description">
+                       Add Branch ( <i>if yes</i> )
+                      </p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Location</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Box address</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Email</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Phone</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label>Business Hours</label>
                             <input type="text" class="form-control">
                           </div>
                         </div>
                         
                       </div>
-                    <p class="card-description">
-                      Fee
-                    </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Querry</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="$0.00" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Phone/Video call</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="$0.00" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <p class="card-description">
-                      Address
-                    </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Address</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Postcode</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">City</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Country</label>
-                          <div class="col-sm-9">
-                            <select class="form-control">
-                              <option>America</option>
-                              <option>Italy</option>
-                              <option>Russia</option>
-                              <option>Britain</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                     <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
                     <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
                     <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
