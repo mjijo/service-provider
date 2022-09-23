@@ -413,142 +413,87 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Appointments</h4>
-                  <p class="card-description">
-                    Re-schedule/Edit/Create Appointments
-                  </p>
-                  <hr>
-                  <form class="form-sample">
-                    <p class="card-description">
-                      Appointment info
-                    </p>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">First Name</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Last Name</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Date</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="DD/MM/YY">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Time</label>
-                          <div class="col-sm-9">
-                            <input type="text" class="form-control" placeholder="HH:MM AM">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Date of Birth</label>
-                          <input type="text" class="form-control" placeholder="DD/MM/YY">
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Email Address</label>
-                          <input type="text" class="form-control" placeholder="test@test.co.ke">
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Phone</label>
-                          <input type="text" class="form-control" >
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Country / Region</label>
-                          <input type="text" class="form-control" placeholder="Nairob - Kenya">
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Street Address</label>
-                          <input type="text" class="form-control" placeholder="House no and Street name">
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Town / City</label>
-                          <input type="text" class="form-control" >
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>County (optional)</label>
-                          <input type="text" class="form-control" >
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label>Postcode</label>
-                          <input type="text" class="form-control" >
-                        </div>
-                      </div>
-                      
-                    </div>              
-                      
-                      
-                      
-                    
+                  <h4 class="card-title">My Panel</h4>
                   
-                    
-                    <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
-                    <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
-                    <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            
-            
-            
-            
-          </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <form class="form-sample">
+                        
+                        
+                        <div class="form-group">
+                          <label for="exampleInputName1">Service Provider</label>
+                          <select class="form-control">
+                            <option>Lawyers</option>
+                            <option>Doctors</option>
+                            <option>Surveyors</option>
+                            <option>Assessors</option>
+                          </select>
+                          <p class="small">Select service provider and move it to your panel on the right.</p>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Service provider Description</label>
+                          <textarea class="form-control" rows="8"></textarea>
+                          <p class="small">The description is not prominent by default; however, some themes may show it.</p>
+                        </div>
+                        <button class="btn btn-primary">Move to panel</button>
+                      </form>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="btn-group mb-2 hidden-phone">
+                        <a data-toggle="dropdown" href="#" class="btn btn-outline-primary" aria-expanded="false">
+                            Action
+                            <i class="ti-angle-down "></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a href="#"><i class="ti-trash ml-2"></i> Remove</a></li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-success">Apply</a>
+                    </div>
+                      <table class="table table-bordered">
+                        <thead class="thead-light">
+                          <tr>
+                            <th class="span1"><input type="checkbox"></th>
+                            <th class="span2">Name</th>
+                            <th class="span2">Slug</th>
+                            <th class="span9">Count</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="edit-category.html">Auto Spares</a></td>
+                            <td>auto-spares</td>
+                            <td><strong>4</strong></td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="edit-category.html">Auto Spares</a></td>
+                            <td>auto-spares</td>
+                            <td><strong>4</strong></td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <td><a href="edit-category.html">Auto Spares</a></td>
+                            <td>auto-spares</td>
+                            <td><strong>4</strong></td>
+                          </tr>
+                        </tbody>
+                        <thead class="thead-light">
+                          <tr>
+                            <th class="span1"><input type="checkbox"></th>
+                            <th class="span2">Name</th>
+                            <th class="span2">Slug</th>
+                            <th class="span9">Count</th>
+                            
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+                 </div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
