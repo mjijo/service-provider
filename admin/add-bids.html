@@ -407,11 +407,70 @@
                   <hr>
                   <form class="forms-sample">
                     <div class="form-group">
-                      <label for="exampleInputName1">Item Name</label>
-                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                      <p><b>Bid Reference Number: </b><i>3343</i></p>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputName1">Reserved Price</label>
+                      <label for="exampleInputName1">Claim Number</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="0">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Registration Number</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="0">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Chassis Number</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="0">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Description of Loss</label>
+                      <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleSelectGender">Salvage Branch</label>
+                        <select class="form-control" id="exampleSelectGender">
+                          <option>Nairobi</option>
+                          <option>Nyeri</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelectGender">Vehicle Make</label>
+                          <select class="form-control" id="exampleSelectGender">
+                            <option>Toyota</option>
+                            <option>Nyeri</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleSelectGender">Vehicle model</label>
+                            <select class="form-control" id="exampleSelectGender">
+                              <option>Sedan</option>
+                              <option>Nyeri</option>
+                            </select>
+                          </div>
+                      <div class="form-group">
+                        <label for="exampleInputName1">Salvage Custodian</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="eg. Equity">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleSelectGender">Location of Salvage</label>
+                          <select class="form-control" id="exampleSelectGender">
+                            <option>Nairobi</option>
+                            <option>Nyeri</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">State</label>
+                          <input type="text" class="form-control" id="exampleInputName1" placeholder="">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">City</label>
+                          <input type="text" class="form-control" id="exampleInputName1" placeholder="">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputName1">Contact Person</label>
+                          <input type="text" class="form-control" id="exampleInputName1" placeholder="">
+                        </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Sum Insured</label>
                       <div class="input-group">
                         <div class="input-group-prepend">
                           <span class="input-group-text bg-primary text-white">Ksh</span>
@@ -422,50 +481,59 @@
                         </div>
                       </div>
                     </div>
-                    
                     <div class="form-group">
-                      <label for="exampleSelectGender">Category Type</label>
+                      <label for="exampleInputName1">Policy Number</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="0">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Total Claim Paid</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text bg-primary text-white">Ksh</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <div class="input-group-append">
+                          <span class="input-group-text">.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Insured Interested?</label>
+                      <select class="form-control" id="exampleSelectGender">
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Closing Date</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="DD/MM/YY">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleSelectGender">Status</label>
                         <select class="form-control" id="exampleSelectGender">
-                          <option>Salvage</option>
-                          <option>Non-Salvage</option>
+                          <option>Active</option>
+                          <option>Inactive</option>
                         </select>
                       </div>
 
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Description</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                      </div> 
+                      
                     <div class="form-group">
                       <label>Upload Images</label>
                       <input type="file" name="img[]" class="file-upload-default">
                       <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Images">
                         <span class="input-group-append">
                           <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
                         </span>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputCity1">Due Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="mm/dd/yy">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Created by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Date Created</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified by</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="Robert Mike" disabled>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputCity1">Modified Date</label>
-                      <input type="datetime" class="form-control" id="exampleInputCity1" placeholder="14 may 2020" disabled>
-                    </div>
-                    
+                      <label for="exampleSelectGender">Publish Salvage</label>
+                        <select class="form-control" id="exampleSelectGender">
+                          <option>yes</option>
+                          <option>No</option>
+                        </select>
+                      </div>
                     <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
                     <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
                     <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
