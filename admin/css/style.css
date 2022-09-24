@@ -22103,3 +22103,7 @@ ul {
 .italic {
   text-decoration: italic;
 }
+
+.nav-tabs .nav-link {
+border-radius:0 !important;
+}
