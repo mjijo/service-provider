@@ -1,1 +1,224 @@
-<p>add-invoice works!</p>
+<div class="container-fluid page-body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+<app-sidebar></app-sidebar>
+    <!-- partial -->
+    <div class="main-panel">
+      <div class="content-wrapper">
+        <div class="row">
+
+
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Add Invoice</h4>
+                <p class="card-description">
+                  Invoice Info
+                </p>
+                <hr>
+
+                <form class="form-sample">
+                  <!-- <p class="card-description">
+                    Customers Names
+                  </p> -->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">First Name</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Last Name</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Company Name</label>
+                        <input type="text" class="form-control" placeholder="">
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Phone</label>
+                          <input type="text" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Email</label>
+                          <input type="text" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Country / Region</label>
+                        <input type="text" class="form-control" placeholder="Nairob - Kenya">
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Street Address</label>
+                          <input type="text" class="form-control" placeholder="House no and Street name">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Postal Address</label>
+                          <input type="text" class="form-control" placeholder="House no and Street name">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Currency</label>
+                          <input type="text" class="form-control" placeholder="Select Currency">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Postal code</label>
+                          <input type="text" class="form-control" placeholder="Enter postal code">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label>Attach Files</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Scanned ID Image">
+                          <span class="input-group-append">
+                            <button class="file-upload-browse btn btn-primary" type="button"><i class="ti-clip mr-1"></i> Attach</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                   <p class="card-description">
+                    Job Information
+                  </p>
+                  <table class="table table-condensed table-hover">
+                    <thead>
+                      <tr>
+                        <th class="span1">Description</th>
+                        <th class="span2">Quantity</th>
+                        <th class="span2">Unit Price</th>
+                        <th class="span2">Amount</th>
+                        <th class="span2">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lorem ipsum dolor sit amet, </td>
+                        <td>1</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td><strong><button class="btn btn-danger btn-sm rounded-pill"><i class="ti-trash mr-1"></i> delete</button></strong></td>
+
+                      </tr>
+                      <tr>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control"></td>
+                        <td><strong><button class="btn btn-success btn-sm rounded-pill"><i class="ti-plus mr-1"></i> Add </button></strong></td>
+
+                      </tr>
+                      <tr>
+                        <td>Sub Total</td>
+                        <td><input type="text" class="form-control" placeholder="$0"></td>
+                        <td>Discount Amt</td>
+                        <td><input type="text" class="form-control" placeholder="$0"></td>
+                      </tr>
+                      <tr>
+                        <td>Tax Rate</td>
+                        <td><input type="text" class="form-control" placeholder="$0"></td>
+                        <td>Tax Amount</td>
+                        <td><input type="text" class="form-control" placeholder="$0"></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Total Amount</strong></td>
+                        <td><input type="textarea" class="form-control" placeholder="$0"></td>
+                        <td>Notes and Terms</td>
+                        <td><input type="text" class="form-control" placeholder="Lorem Ipsum"></td>
+                      </tr>
+                      <hr >
+                    </tbody>
+
+                  </table>
+                  <hr>
+                  <p class="card-description">
+                    From Name
+                  </p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Full Names</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Email Address</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
+                  <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
+                  <button type="submit" class="btn btn-default mr-2"><i class="ti-save"></i> Preview</button>
+                  <button type="submit" class="btn btn-info mr-2">Send Email <i class="ti-arrow-right"></i></button>
+                  <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      <app-footer></app-footer>
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->

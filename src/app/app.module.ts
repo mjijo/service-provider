@@ -25,6 +25,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { AddInvoiceComponent } from './invoices/add-invoice/add-invoice.component';
 import { ViewInvoiceComponent } from './invoices/view-invoice/view-invoice.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { MybidsComponent } from './bids/mybids/mybids.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { FooterComponent } from './layout/footer/footer.component';
     OrdersComponent,
     AddInvoiceComponent,
     ViewInvoiceComponent,
-    FooterComponent
+    FooterComponent,
+    MybidsComponent
   ],
   imports: [
     BrowserModule,
