@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { PluginsService } from 'src/app/services/plugins.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pluginService:PluginsService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+   
+  }
+
+  ngAfterViewInit() {
+    this.pluginService.hoverableMenu();
   }
 
 }

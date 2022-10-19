@@ -24,6 +24,7 @@ import { AuctionWinnersComponent } from './auctions/auction-winners/auction-winn
 import { OrdersComponent } from './orders/orders.component';
 import { AddInvoiceComponent } from './invoices/add-invoice/add-invoice.component';
 import { ViewInvoiceComponent } from './invoices/view-invoice/view-invoice.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ViewInvoiceComponent } from './invoices/view-invoice/view-invoice.compo
     AuctionWinnersComponent,
     OrdersComponent,
     AddInvoiceComponent,
-    ViewInvoiceComponent
+    ViewInvoiceComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

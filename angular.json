@@ -33,6 +33,7 @@
               "src/assets/css/themify-icons.css"
             ],
             "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
               "src/assets/vendors/base/vendor.bundle.base.js",
               "src/assets/vendors/chart.js/Chart.min.js",
               "src/assets/js/off-canvas.js",

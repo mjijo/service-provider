@@ -3,6 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { CommonComponent } from './layout/common/common.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { MytaskComponent } from './task/mytask/mytask.component';
+import { AddappointmentComponent } from './appointments/addappointment/addappointment.component';
+import { ViewappointmentsComponent } from './appointments/viewappointments/viewappointments.component';
+import { AddquotationComponent } from './quotation/addquotation/addquotation.component';
+import { ViewquotationComponent } from './quotation/viewquotation/viewquotation.component';
 
 const routes: Routes = [
 
@@ -11,21 +16,18 @@ const routes: Routes = [
     path: '',
     component: CommonComponent,
     children: [
-      {
-        path: 'dashboard',
-        children: [
-          { path: '', component: DashboardComponent }
-          // { path: 'all-movies', component: AllMoviesComponent },
-          // { path: 'coming-soon', component: ComingSoonComponent }
-
-        ]
-
-      },
+      
 
       { path: 'dashboard', component: DashboardComponent },
-      { path: 'notifications', component: NotificationsComponent },
       { path: '', component: DashboardComponent},
-      { path: '**', redirectTo: 'movies' }
+      { path: 'notifications', component: NotificationsComponent },
+      { path: 'my-tasks', component: MytaskComponent },
+      { path: 'add-appointment', component: AddappointmentComponent },
+      { path: 'view-appointments', component: ViewappointmentsComponent },
+      { path: 'add-quotation', component: AddquotationComponent },
+      { path: 'view-quotations', component: ViewquotationComponent },
+    
+      { path: '**', redirectTo: 'dashboard' }
 
     ]
 
