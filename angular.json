@@ -29,9 +29,23 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/css/styles.css"
+              "src/assets/css/styles.css",
+              "src/assets/css/themify-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendors/base/vendor.bundle.base.js",
+              "src/assets/vendors/chart.js/Chart.min.js",
+              "src/assets/js/off-canvas.js",
+              "src/assets/js/hoverable-collapse.js",
+              "src/assets/js/template.js",
+              "src/assets/js/todolist.js",
+              "src/assets/js/chart.js",
+              "src/assets/js/dashboard.js",
+              "src/assets/js/documentation.js",
+              "src/assets/js/file-upload.js", 
+              "src/assets/js/tabs.js",
+              "src/assets/js/tooltips.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,25 +110,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/assets/images"
-            ],
-            "styles": [
-              "src/styles.scss",
-              "src/vendors/base/vendor.bundle.base.css",
-              "src/vendors/ti-icons/css/themify-icons.css"
-      
-            ],
-            "scripts": [
-              "src/assets/js/chart.js",
-              "src/assets/js/dashboard.js",
-              "src/assets/js/documentation.js",
-              "src/assets/js/file-upload.js",
-              "src/assets/js/hoverable-collapse.js",
-              "src/assets/js/off-canvas.js",
-              "src/assets/js/tabs.js",
-              "src/assets/js/template.js",
-              "src/assets/js/todolist.js",
-              "src/assets/js/tooltips.js"
             ]
+            
           }
         }
       }
