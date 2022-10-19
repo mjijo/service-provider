@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CommonComponent } from './layout/common/common.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 const routes: Routes = [
 
@@ -21,7 +22,8 @@ const routes: Routes = [
 
       },
 
-      { path: 'Dashboard', component: DashboardComponent },
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'notifications', component: NotificationsComponent },
       { path: '', component: DashboardComponent},
       { path: '**', redirectTo: 'movies' }
 

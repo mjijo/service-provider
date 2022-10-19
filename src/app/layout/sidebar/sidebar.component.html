@@ -1,247 +1,275 @@
    <!-- partial:partials/_sidebar.html -->
    <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link" href="dashboard.html">
-          <i class="ti-dashboard menu-icon"></i>
-          <span class="menu-title">Dashboard</span>
+    <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="dashboard">
+            <i class="ti-dashboard menu-icon"></i>
+            <span class="menu-title">Dashboard</span>
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="message.html">
-          <i class="ti-email menu-icon"></i>
-          <span class="menu-title">Notifications</span>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="notifications">
+            <i class="ti-email menu-icon"></i>
+            <span class="menu-title">Notifications <span class="badge">4</span></span>
         </a>
-      </li>
-      
-      
-
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#bid" aria-expanded="false" aria-controls="ui-basic">
-            <i class="ti-tag menu-icon"></i>
-            <span class="menu-title">Bids</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="bid">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="add-bids.html">Add Bids</a></li>
-              <li class="nav-item"> <a class="nav-link" href="active-bids.html">Active Bids</a></li>
-              <li class="nav-item"> <a class="nav-link" href="bid-winner.html">Bid Winners</a></li>
-            </ul>
-          </div>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#Services" aria-expanded="false" aria-controls="ui-basic">
-            <i class="ti-bag menu-icon"></i>
-            <span class="menu-title">Services</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="Services">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="services.html">Services</a></li>
-              <li class="nav-item"> <a class="nav-link" href="add-service.html">Add Services</a></li>
-              <li class="nav-item"> <a class="nav-link" href="category.html">category</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#myServices" aria-expanded="false" aria-controls="ui-basic">
-            <i class="ti-bag menu-icon"></i>
-            <span class="menu-title">My Services</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="myServices">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="my-services.html">Services</a></li>
-              <li class="nav-item"> <a class="nav-link" href="add-my-services.html">Add Services</a></li>
-              
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#product" aria-expanded="false" aria-controls="ui-basic">
-            <i class="ti-shopping-cart-full menu-icon"></i>
-            <span class="menu-title">Product</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="product">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="products.html">Products</a></li>
-              <li class="nav-item"> <a class="nav-link" href="add-product.html">Add Product</a></li>
-              
-            </ul>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="collapse" href="#appointment" aria-expanded="false" aria-controls="ui-basic">
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="view-task.html">
+            <i class="ti-credit-card menu-icon"></i>
+            <span class="menu-title">My Tasks<span class="badge">4</span> </span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#appointment" aria-expanded="false" aria-controls="ui-basic">
             <i class="ti-calendar menu-icon"></i>
             <span class="menu-title">Appointments</span>
             <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="appointment">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="appointments.html">Appointments</a></li>
-              <li class="nav-item"> <a class="nav-link" href="add-appointment.html">Add Appointments</a></li>
-              
-            </ul>
-          </div>
-        </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="orders.html">
-          <i class="ti-ticket menu-icon"></i>
-          <span class="menu-title">Orders</span>
         </a>
-      </li>
-      <li class="nav-item">
+        <div class="collapse" id="appointment">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="add-appointment.html">Add Appointment</a></li>
+            <li class="nav-item"> <a class="nav-link" href="appointments.html">View</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#quotation" aria-expanded="false" aria-controls="ui-basic">
-          <i class="ti-calendar menu-icon"></i>
-          <span class="menu-title">Quotations</span>
-          <i class="menu-arrow"></i>
+            <i class="ti-calendar menu-icon"></i>
+            <span class="menu-title">Quotations</span>
+            <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="quotation">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="quotation.html">Quotations</a></li>
-            <li class="nav-item"> <a class="nav-link" href="add-quotation.html">Add Quotation</a></li>
-            
-          </ul>
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="add-quotation.html">New Quote</a></li>
+            <li class="nav-item"> <a class="nav-link" href="quotation.html">View</a></li>
+            </ul>
         </div>
-      </li>
-      <li class="nav-item">
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#bid" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-tag menu-icon"></i>
+            <span class="menu-title">Bids</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="bid">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="my-bids.html">My bids</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#bids" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-tag menu-icon"></i>
+            <span class="menu-title">Auctions/Salvages</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="bids">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="add-bids.html">Create</a></li>
+            <li class="nav-item"> <a class="nav-link" href="active-bids.html">View</a></li>
+            <li class="nav-item"> <a class="nav-link" href="bid-winner.html">Winners</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#orders" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-ticket menu-icon"></i>
+            <span class="menu-title">Orders</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="orders">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="orders.html">View</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#invoice" aria-expanded="false" aria-controls="ui-basic">
-          <i class="ti-receipt menu-icon"></i>
-          <span class="menu-title">Invoices</span>
-          <i class="menu-arrow"></i>
+            <i class="ti-receipt menu-icon"></i>
+            <span class="menu-title">Invoices</span>
+            <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="invoice">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="invoice.html">Invoices</a></li>
-            <li class="nav-item"> <a class="nav-link" href="add-invoice.html">Add Invoice</a></li>
-            
-          </ul>
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="add-invoice.html">New Invoice</a></li>
+            <li class="nav-item"> <a class="nav-link" href="invoice.html">View</a></li>
+            </ul>
         </div>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="ti-thumb-up menu-icon"></i>
-          <span class="menu-title">Recommendations</span>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#tasks" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-credit-card menu-icon"></i>
+            <span class="menu-title">Tasks</span>
+            <i class="menu-arrow"></i>
         </a>
-      </li>
-     
-        <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#task" aria-expanded="false" aria-controls="ui-basic">
-          <i class="ti-credit-card menu-icon"></i>
-          <span class="menu-title">Task</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="task">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="add-task.html">Create</a></li>
+        <div class="collapse" id="tasks">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="add-task.html">New Task</a></li>
             <li class="nav-item"> <a class="nav-link" href="view-task.html">View</a></li>
-            
-          </ul>
+            </ul>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#billing" aria-expanded="false" aria-controls="ui-basic">
-          <i class="ti-credit-card menu-icon"></i>
-          <span class="menu-title">Billing</span>
-          <i class="menu-arrow"></i>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#clients" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-thumb-up menu-icon"></i>
+            <span class="menu-title">Referred Clients</span>
+            <i class="menu-arrow"></i>
         </a>
-        <div class="collapse" id="billing">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="add-billing.html">Create</a></li>
-            <li class="nav-item"> <a class="nav-link" href="billing.html">View</a></li>
-            <li class="nav-item"> <a class="nav-link" href="add-billing.html">Edit</a></li>
-          </ul>
+        <div class="collapse" id="clients">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="reffered-clients.html">View</a></li>
+            </ul>
         </div>
-      </li>
-
-      
-
-      <li class="nav-item">
-        <a class="nav-link" href="reffered-clients.html">
-          <i class="ti-announcement menu-icon"></i>
-          <span class="menu-title">Reffered Clients</span>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#services" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-bag menu-icon"></i>
+            <span class="menu-title">Our Services</span>
+            <i class="menu-arrow"></i>
         </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="subscribers.html">
-          <i class="ti-menu-alt menu-icon"></i>
-          <span class="menu-title">Newsletter</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="edit-user.html">
-          <i class="ti-user menu-icon"></i>
-          <span class="menu-title">My Profile</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#org" aria-expanded="false" aria-controls="ui-basic">
-          <i class="ti-credit-card menu-icon"></i>
-          <span class="menu-title">Organizations</span>
-          <i class="menu-arrow"></i>
-        </a>
-        <div class="collapse" id="org">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="view-organisation-user.html">View</a></li>
-            <li class="nav-item"> <a class="nav-link" href="edit-org-user.html">Edit</a></li>
-            
-          </ul>
+        <div class="collapse" id="services">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="add-service.html">New Service</a></li>
+            <li class="nav-item"> <a class="nav-link" href="services.html">View Services</a></li>
+            </ul>
         </div>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" data-toggle="collapse" href="#sp" aria-expanded="false" aria-controls="ui-basic">
-          <i class="ti-credit-card menu-icon"></i>
-          <span class="menu-title">Service Providers</span>
-          <i class="menu-arrow"></i>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#provider" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-credit-card menu-icon"></i>
+            <span class="menu-title">Service Providers</span>
+            <i class="menu-arrow"></i>
         </a>
-        <div class="collapse" id="sp">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="view-service-provider.html">View</a></li>
+        <div class="collapse" id="provider">
+            <ul class="nav flex-column sub-menu">
             <li class="nav-item"> <a class="nav-link" href="edit-service-provider-user.html">Create</a></li>
+            <li class="nav-item"> <a class="nav-link" href="view-service-provider.html">View</a></li>
             <li class="nav-item"> <a class="nav-link" href="my-panel.html">My Panel</a></li>
-            
-          </ul>
+            </ul>
         </div>
-      </li>
-
-      <li class="nav-item">
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#product" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-shopping-cart-full menu-icon"></i>
+            <span class="menu-title">Products</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="product">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="add-product.html">Add Product</a></li>
+            <li class="nav-item"> <a class="nav-link" href="products.html">Products</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#tenders" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-credit-card menu-icon"></i>
+            <span class="menu-title">Tenders</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="tenders">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="add-tender.html">New Tender</a></li>
+            <li class="nav-item"> <a class="nav-link" href="view-tender.html">View Tenders</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#org-user" aria-expanded="false" aria-controls="ui-basic">
-          <i class="ti-world menu-icon"></i>
-          <span class="menu-title">Organisation Users</span>
-          <i class="menu-arrow"></i>
+            <i class="ti-world menu-icon"></i>
+            <span class="menu-title">Organizations Users</span>
+            <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="org-user">
-          <ul class="nav flex-column sub-menu">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="edit-organisation-user.html">New User</a></li>
             <li class="nav-item"> <a class="nav-link" href="org-users.html">View Users</a></li>
-            <li class="nav-item"> <a class="nav-link" href="edit-organisation-user.html">Create Users</a></li>
-          </ul>
+            </ul>
         </div>
-      </li>
-     
-
-      <li class="nav-item">
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#billing" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-credit-card menu-icon"></i>
+            <span class="menu-title">Billing</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="billing">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="add-billing.html">Create</a></li>
+            <li class="nav-item"> <a class="nav-link" href="billing.html">View/Upgrade</a></li>
+            <li class="nav-item"> <a class="nav-link" href="upcoming-bills.html">Upcoming bills</a></li>
+            <li class="nav-item"> <a class="nav-link" href="tranactions.html">Transactions</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="my-profile.html">
+            <i class="ti-user menu-icon"></i>
+            <span class="menu-title">My Profile</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#org" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-credit-card menu-icon"></i>
+            <span class="menu-title">Organizations</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="org">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="new-org.html">New Org</a></li>
+            <li class="nav-item"> <a class="nav-link" href="view-org.html">View</a></li>
+            </ul>
+        </div>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#user" aria-expanded="false" aria-controls="ui-basic">
-          <i class="ti-world menu-icon"></i>
-          <span class="menu-title">Web Users</span>
-          <i class="menu-arrow"></i>
+            <i class="ti-world menu-icon"></i>
+            <span class="menu-title">Web Users</span>
+            <i class="menu-arrow"></i>
         </a>
         <div class="collapse" id="user">
-          <ul class="nav flex-column sub-menu">
-            <li class="nav-item"> <a class="nav-link" href="users.html">View Users</a></li>
-            <li class="nav-item"> <a class="nav-link" href="edit-user.html">Create Users</a></li>
-          </ul>
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="users.html">View</a></li>
+            </ul>
         </div>
-      </li>
-
-
-     
-     
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="subscribers.html">
+            <i class="ti-email menu-icon"></i>
+            <span class="menu-title">Newsletter</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#msg" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-email menu-icon"></i>
+            <span class="menu-title">Messaging</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="msg">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="new-message.html">New Message</a></li>
+            <li class="nav-item"> <a class="nav-link" href="view-messages.html">View</a></li>
+            </ul>
+        </div>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="collapse" href="#settings" aria-expanded="false" aria-controls="ui-basic">
+            <i class="ti-settings menu-icon"></i>
+            <span class="menu-title">Settings</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="settings">
+            <ul class="nav flex-column sub-menu">
+            <li class="nav-item"> <a class="nav-link" href="category.html">Service Categories</a></li>
+            <li class="nav-item"> <a class="nav-link" href="countries.html">Countries</a></li>
+            <li class="nav-item"> <a class="nav-link" href="prod-categories.html">Product categories</a></li>
+            <li class="nav-item"> <a class="nav-link" href="sectors.html">Industry/Sectors</a></li>
+            </ul>
+        </div>
+    </li>
+    
     </ul>
-  </nav>
+    </nav>
   <!-- partial -->
