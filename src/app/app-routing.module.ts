@@ -29,6 +29,14 @@ import { AddtenderComponent } from './tenders/addtender/addtender.component';
 import { ViewtendersComponent } from './tenders/viewtenders/viewtenders.component';
 import { AdduserComponent } from './organisationsusers/adduser/adduser.component';
 import { ViewusersComponent } from './organisationsusers/viewusers/viewusers.component';
+import { AddbillingComponent } from './billing/addbilling/addbilling.component';
+import { UpgragebillingComponent } from './billing/upgragebilling/upgragebilling.component';
+import { UpcomingbillsComponent } from './billing/upcomingbills/upcomingbills.component';
+import { TransactionsComponent } from './billing/transactions/transactions.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
+import { AddorganistationComponent } from './organisations/addorganistation/addorganistation.component';
+import { VieworganisationsComponent } from './organisations/vieworganisations/vieworganisations.component';
+import { UsersComponent } from './users/users.component';
 
 const routes: Routes = [
 
@@ -68,6 +76,15 @@ const routes: Routes = [
       { path: 'view-tenders', component: ViewtendersComponent },
       { path: 'add-organisation-user', component: AdduserComponent },
       { path: 'view-organisation-user', component: ViewusersComponent },
+      { path: 'add-billing', component: AddbillingComponent },
+      { path: 'billing', component: UpgragebillingComponent },
+      { path: 'upcoming-bills', component: UpcomingbillsComponent },
+      { path: 'transactions', component: TransactionsComponent },
+      { path: 'my-profile', component: MyprofileComponent},
+      { path: 'add-organisation', component: AddorganistationComponent},
+      { path: 'view-organisation', component: VieworganisationsComponent},
+      { path: 'users', component: UsersComponent},
+      { path: 'subscribers', component: UsersComponent},
     
       { path: '**', redirectTo: 'dashboard' }
 

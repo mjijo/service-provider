@@ -40,6 +40,21 @@ import { AddtenderComponent } from './tenders/addtender/addtender.component';
 import { ViewtendersComponent } from './tenders/viewtenders/viewtenders.component';
 import { AdduserComponent } from './organisationsusers/adduser/adduser.component';
 import { ViewusersComponent } from './organisationsusers/viewusers/viewusers.component';
+import { AddbillingComponent } from './billing/addbilling/addbilling.component';
+import { UpgragebillingComponent } from './billing/upgragebilling/upgragebilling.component';
+import { UpcomingbillsComponent } from './billing/upcomingbills/upcomingbills.component';
+import { TransactionsComponent } from './billing/transactions/transactions.component';
+import { MyprofileComponent } from './myprofile/myprofile.component';
+import { AddorganistationComponent } from './organisations/addorganistation/addorganistation.component';
+import { VieworganisationsComponent } from './organisations/vieworganisations/vieworganisations.component';
+import { UsersComponent } from './users/users.component';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { AddmessageComponent } from './messages/addmessage/addmessage.component';
+import { ViewmessageComponent } from './messages/viewmessage/viewmessage.component';
+import { ServicecategoryComponent } from './setting/servicecategory/servicecategory.component';
+import { CountriesComponent } from './setting/countries/countries.component';
+import { ProductcategoriesComponent } from './setting/productcategories/productcategories.component';
+import { SectorComponent } from './setting/sector/sector.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +95,22 @@ import { ViewusersComponent } from './organisationsusers/viewusers/viewusers.com
     AddtenderComponent,
     ViewtendersComponent,
     AdduserComponent,
-    ViewusersComponent
+    ViewusersComponent,
+    AddbillingComponent,
+    UpgragebillingComponent,
+    UpcomingbillsComponent,
+    TransactionsComponent,
+    MyprofileComponent,
+    AddorganistationComponent,
+    VieworganisationsComponent,
+    UsersComponent,
+    NewsletterComponent,
+    AddmessageComponent,
+    ViewmessageComponent,
+    ServicecategoryComponent,
+    CountriesComponent,
+    ProductcategoriesComponent,
+    SectorComponent
   ],
   imports: [
     BrowserModule,

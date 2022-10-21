@@ -1,0 +1,197 @@
+<div class="container-fluid page-body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+<app-sidebar></app-sidebar>
+    <!-- partial -->
+    <div class="main-panel">
+      <div class="content-wrapper">
+        <div class="row">
+
+
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Create Billing</h4>
+                <p class="card-description">
+                  Create Billing Address
+                </p>
+                <hr>
+                <form class="form-sample">
+                  <p class="card-description">
+                    Personal info
+                  </p>
+
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Billing Cycle</label>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                              Monthly
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                              Semi-Annually
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                              Yearly
+                            </label>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Package Name</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">No. of Users</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <label for="exampleTextarea1">Description</label>
+                              <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                            </div>
+                      </div>
+
+                    </div>
+                 <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Currency</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Amount</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Tax</label>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                              Exclusive
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                             Inclusive
+                            </label>
+                          </div>
+                        </div>
+
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Tax Amount</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Discount</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Active</label>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                              Yes
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                             No
+                            </label>
+                          </div>
+                        </div>
+
+
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
+                  <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
+                  <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+     <app-footer></app-footer>
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
