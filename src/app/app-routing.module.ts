@@ -15,6 +15,20 @@ import { AuctionWinnersComponent } from './auctions/auction-winners/auction-winn
 import { OrdersComponent } from './orders/orders.component';
 import { AddInvoiceComponent } from './invoices/add-invoice/add-invoice.component';
 import { ViewInvoiceComponent } from './invoices/view-invoice/view-invoice.component';
+import { AddtaskComponent } from './task/addtask/addtask.component';
+import { ViewtaskComponent } from './task/viewtask/viewtask.component';
+import { ReferredclientsComponent } from './referredclients/referredclients.component';
+import { AddserviceComponent } from './ourservices/addservice/addservice.component';
+import { ViewservicesComponent } from './ourservices/viewservices/viewservices.component';
+import { AddServiceComponent } from './serviceproviders/add-service/add-service.component';
+import { ViewServicesComponent } from './serviceproviders/view-services/view-services.component';
+import { MyPanelComponent } from './serviceproviders/my-panel/my-panel.component';
+import { AddproductComponent } from './products/addproduct/addproduct.component';
+import { ViewproductsComponent } from './products/viewproducts/viewproducts.component';
+import { AddtenderComponent } from './tenders/addtender/addtender.component';
+import { ViewtendersComponent } from './tenders/viewtenders/viewtenders.component';
+import { AdduserComponent } from './organisationsusers/adduser/adduser.component';
+import { ViewusersComponent } from './organisationsusers/viewusers/viewusers.component';
 
 const routes: Routes = [
 
@@ -40,6 +54,20 @@ const routes: Routes = [
       { path: 'orders', component: OrdersComponent },
       { path: 'add-invoice', component: AddInvoiceComponent },
       { path: 'invoices', component: ViewInvoiceComponent },
+      { path: 'add-task', component: AddtaskComponent },
+      { path: 'view-task', component: ViewtaskComponent },
+      { path: 'referred-clients', component: ReferredclientsComponent },
+      { path: 'add-service', component: AddserviceComponent },
+      { path: 'view-service', component: ViewservicesComponent },
+      { path: 'add-serviceprovider', component: AddServiceComponent },
+      { path: 'view-serviceprovider', component: ViewServicesComponent },
+      { path: 'my-panel', component: MyPanelComponent },
+      { path: 'add-product', component: AddproductComponent },
+      { path: 'view-products', component: ViewproductsComponent },
+      { path: 'add-tender', component: AddtenderComponent },
+      { path: 'view-tenders', component: ViewtendersComponent },
+      { path: 'add-organisation-user', component: AdduserComponent },
+      { path: 'view-organisation-user', component: ViewusersComponent },
     
       { path: '**', redirectTo: 'dashboard' }
 

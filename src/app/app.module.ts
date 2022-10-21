@@ -26,6 +26,20 @@ import { AddInvoiceComponent } from './invoices/add-invoice/add-invoice.componen
 import { ViewInvoiceComponent } from './invoices/view-invoice/view-invoice.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MybidsComponent } from './bids/mybids/mybids.component';
+import { ReferredclientsComponent } from './referredclients/referredclients.component';
+import { AddserviceComponent } from './ourservices/addservice/addservice.component';
+import { ViewservicesComponent } from './ourservices/viewservices/viewservices.component';
+import { AddproductComponent } from './products/addproduct/addproduct.component';
+import { ViewproductComponent } from './products/viewproduct/viewproduct.component';
+import { AddServiceComponent } from './serviceproviders/add-service/add-service.component';
+import { ViewServicesComponent } from './serviceproviders/view-services/view-services.component';
+import { MyPanelComponent } from './serviceproviders/my-panel/my-panel.component';
+import { AddproductsComponent } from './products/addproducts/addproducts.component';
+import { ViewproductsComponent } from './products/viewproducts/viewproducts.component';
+import { AddtenderComponent } from './tenders/addtender/addtender.component';
+import { ViewtendersComponent } from './tenders/viewtenders/viewtenders.component';
+import { AdduserComponent } from './organisationsusers/adduser/adduser.component';
+import { ViewusersComponent } from './organisationsusers/viewusers/viewusers.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +66,21 @@ import { MybidsComponent } from './bids/mybids/mybids.component';
     AddInvoiceComponent,
     ViewInvoiceComponent,
     FooterComponent,
-    MybidsComponent
+    MybidsComponent,
+    ReferredclientsComponent,
+    AddserviceComponent,
+    ViewservicesComponent,
+    AddproductComponent,
+    ViewproductComponent,
+    AddServiceComponent,
+    ViewServicesComponent,
+    MyPanelComponent,
+    AddproductsComponent,
+    ViewproductsComponent,
+    AddtenderComponent,
+    ViewtendersComponent,
+    AdduserComponent,
+    ViewusersComponent
   ],
   imports: [
     BrowserModule,

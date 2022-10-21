@@ -1,1 +1,134 @@
-<p>viewtask works!</p>
+ <!-- partial -->
+ <div class="container-fluid page-body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+<app-sidebar></app-sidebar>
+    <!-- partial -->
+    <div class="main-panel">
+      <div class="content-wrapper">
+       <div class="row">
+        <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">Tasks</h4>
+                          <hr>
+                          <div class="row">
+
+                            <!---->
+                            <div class="container-fluid">
+                              <a href="add-task.html" class="btn btn-success rounded-0"><i class="ti-plus mr-1"></i>NEW TASK</a>
+                             <div class="btn-group hidden-phone">
+                                     <a data-toggle="dropdown" href="#" class="btn btn-outline-light rounded-0" aria-expanded="false">
+                                         Status
+                                         <i class="ti-angle-down "></i>
+                                     </a>
+                                     <ul class="dropdown-menu p-2">
+                                         <li><a href="#"><i class="ti-angle-double-right"></i>Pending</a></li>
+                                         <li><a href="#"><i class="ti-angle-double-right"></i>Complete</a></li>
+                                         <li class="divider"></li>
+                                         <li><a href="#"><i class="ti-angle-double-right"></i>Invoiced</a></li>
+                                         <li><a href="#"><i class="ti-angle-double-right"></i>Cancelled</a></li>
+                                         <li><a href="#"><i class="ti-angle-double-right"></i>Paid</a></li>
+                                         <li><a href="#"><i class="ti-angle-double-right"></i>Unsatisfactory</a></li>
+                                         <li><a href="#"><i class="ti-angle-double-right"></i>Re-open</a></li>
+                                     </ul>
+                                 </div>
+                            <div class="btn-group hidden-phone">
+                                     <a data-toggle="dropdown" href="#" class="btn btn-outline-light rounded-0" aria-expanded="false">
+                                         More Actions
+                                         <i class="ti-angle-down "></i>
+                                     </a>
+                                     <ul class="dropdown-menu p-2">
+                                         <li><a href="#"><i class="ti-pencil"></i> Mark as Read</a></li>
+                                         <li><a href="#"><i class="ti-trash"></i> Accept</a></li>
+                                         <li><a href="#"><i class="ti-trash"></i> Reject</a></li>
+                                     </ul>
+                                 </div>
+                                 <ul class="unstyled inbox-pagination">
+                                     <li><span>1-50 of 234</span></li>
+                                     <li>
+                                         <a class="np-btn" href="#"><i class="ti-angle-left  pagination-left"></i></a>
+                                     </li>
+                                     <li>
+                                         <a class="np-btn" href="#"><i class="ti-angle-right pagination-right"></i></a>
+                                     </li>
+                                 </ul>
+                               </div>
+                            <!---->
+
+                           </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="table-responsive">
+                                <table class="table table-condensed table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col" class="span1"><input type="checkbox"></th>
+                                      <th scope="col" class="span2">Code</th>
+                                      <th scope="col" class="span2">Task Summary</th>
+                                      <th scope="col" class="span2">Due Date</th>
+                                      <th scope="col" class="span2">From</th>
+                                      <th scope="col" class="span2">Assigned To</th>
+                                      <th scope="col" class="span2">Status</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td><input type="checkbox"> </td>
+                                      <td>123</td>
+                                      <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
+                                      <td>14 May 2020</td>
+                                      <td><strong>john.doe@gmail.com</strong></td>
+                                      <td><strong>mary.doe@gmail.com</strong></td>
+                                      <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
+                                    </tr>
+                                    <tr>
+                                      <td><input type="checkbox"> </td>
+                                      <td>123</td>
+                                      <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
+                                      <td>14 May 2020</td>
+                                      <td><strong>john.doe@gmail.com</strong></td>
+                                      <td><strong>mary.doe@gmail.com</strong></td>
+                                      <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
+                                    </tr>
+                                    <tr>
+                                      <td><input type="checkbox"> </td>
+                                      <td>123</td>
+                                      <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
+                                      <td>14 May 2020</td>
+                                      <td><strong>john.doe@gmail.com</strong></td>
+                                      <td><strong>mary.doe@gmail.com</strong></td>
+                                      <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
+                                    </tr>
+                                    <tr>
+                                      <td><input type="checkbox"> </td>
+                                      <td>123</td>
+                                      <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
+                                      <td>14 May 2020</td>
+                                      <td><strong>john.doe@gmail.com</strong></td>
+                                      <td><strong>mary.doe@gmail.com</strong></td>
+                                      <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                </div>
+        </div>
+       </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+          <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020 <a href="#" target="_blank">ServiceProvider</a>. All rights reserved.</span>
+
+        </div>
+      </footer>
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->

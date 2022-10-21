@@ -1,1 +1,178 @@
-<p>addtask works!</p>
+<div class="container-fluid page-body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+<app-sidebar></app-sidebar>
+    <!-- partial -->
+    <div class="main-panel">
+      <div class="content-wrapper">
+        <div class="row">
+
+
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title"><strong>Add Task</strong></h4>
+
+                <hr>
+
+<form class="form-sample">
+
+<div class="row">
+<div class="col-md-8">
+<div class="row">
+<div class="col-md-8">
+    <div class="form-group">
+      <select class="form-control">
+        <option selected>Select Service Provider</option>
+        <option>Doctors</option>
+        <option>Nurses</option>
+        <option>Laywers</option>
+        <option>Plumber</option>
+      </select>
+    </div>
+</div>
+<div class="col-md-4">
+  <div class="form-group">
+  <button class="btn btn-outline-success rounded-pill">Pending Tasks <span class="badge badge-danger">7</span></button>
+
+  </div>
+</div>
+</div>
+<div class="form-group">
+<label for="exampleInputName1">Select Branch</label>
+<select class="form-control">
+    <option>Branch 1</option>
+    <option>Branch 2</option>
+    <option>Branch 3</option>
+ </select>
+</div>
+<div class="form-group">
+<label for="exampleInputName1">Select Assignee</label>
+<input type="email" class="form-control" id="exampleInputName1" value="john.doe@gmail.com,mary.doe@gmail.com">
+</div>
+<div class="form-group">
+<label for="exampleInputName1">Task Subject</label>
+<input type="text" class="form-control" id="exampleInputName1" value="Lorem Ipsum is simply dummy text">
+</div>
+<div class="form-group">
+<label for="exampleInputName1">Task Description</label>
+<textarea class="form-control" rows="5"></textarea>
+</div>
+
+</div> <!--==end of <div class="col-md-8"> ===-->
+<div class="col-md-4">
+<div class="form-group">
+<label for="exampleInputName1">Due date</label>
+<input type="text" class="form-control" id="exampleInputName1" value="Due date">
+</div>
+<div class="form-group">
+<label for="exampleInputName1">Send Notification To;</label>
+<input type="email" class="form-control" id="exampleInputName1" value="john.doe@gmail.com,mary.doe@gmail.com">
+</div>
+<div class="form-group">
+<label for="exampleInputName1">Status</label>
+<select class="form-control">
+    <option>Open</option>
+    <option>Pending</option>
+    <option>Complete</option>
+    <option>Invoiced</option>
+    <option>Cancelled</option>
+    <option>Paid</option>
+    <option>Unsatisfactory</option>
+    <option>Re-open</option>
+    <option>Closed</option>
+ </select>
+</div>
+<div class="form-group">
+<label for="exampleInputName1">Created date</label>
+<input type="text" class="form-control" id="exampleInputName1" value="Created date" disabled>
+</div>
+<div class="form-group">
+<label for="exampleInputName1">Updated date</label>
+<input type="text" class="form-control" id="exampleInputName1" value="Updated date" disabled>
+</div>
+
+</div>  <!--==end of <div class="col-md-4"> ===-->
+<div class="col-md-12">
+<h4 class="card-title"><strong>ATTACHMENTS/DOCUMENTS</strong></h4>
+<hr>
+<div class="table-responsive">
+<table id="faqs" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Document Name</th>
+            <th>File Upload</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><em> What is Lorem Ipsum?</em></td>
+            <td> <em>LoremIpsum.pdf</em></td>
+
+            <td class="mt-10">
+              <div class="form-group btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-danger">
+                  <i class="ti-trash"></i>
+                </button>
+                <button type="button" class="btn btn-outline-info">
+                  <i class="ti-download"></i>
+                </button>
+                <button type="button" class="btn btn-outline-success">
+                  <i class="ti-plus"></i>
+                </button>
+              </div>
+            
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              </td>
+            <td>
+              <div class="form-group">
+
+                <input type="file" name="img[]" class="file-upload-default">
+                <div class="input-group col-xs-12">
+                  <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                  <span class="input-group-append">
+                    <button class="file-upload-browse btn btn-primary" type="button"><i class="ti-clip"></i> Attach</button>
+                  </span>
+                </div>
+              </div>
+            </td>
+
+            <td style="vertical-align:top;"> <button class="btn btn-info rounded-0"><i class="ti-plus mr-1"></i>Upload</button> </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>  <!--==end of <div class="col-md-12"> ===-->
+</div>  <!-- end of <div class="row">==-->
+
+
+<hr>
+<div class="row">
+<div class="col-md-12">
+  <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
+  <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
+  <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
+
+</div>
+</div>
+</form>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      <app-footer></app-footer>
+      <!-- partial -->
+    </div>
