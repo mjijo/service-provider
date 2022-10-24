@@ -1,1 +1,97 @@
-<p>productcategories works!</p>
+<div class="container-fluid page-body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+<app-sidebar></app-sidebar>
+    <!-- partial -->
+    <div class="main-panel">
+      <div class="content-wrapper">
+        <div class="row">
+
+
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Product Categories</h4>
+  
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-5">
+                        <form class="form-sample">
+                          <div class="form-group">
+                            <label for="exampleInputName1">Product Category Name</label>
+                            <input type="text" class="form-control">
+                            <p class="small">The name is how it appears on your site under product menu.</p>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputName1">Product Category Code</label>
+                            <input type="text" class="form-control">
+  
+                          </div>
+  
+  
+                          <button class="btn btn-primary">Update Category </button>
+                        </form>
+                      </div>
+                      <div class="col-md-7">
+                        <div class="btn-group mb-2 hidden-phone">
+                          <a data-toggle="dropdown" href="#" class="btn btn-outline-primary" aria-expanded="false">
+                              Bulk Action
+                              <i class="ti-angle-down "></i>
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#"><i class="ti-pencil ml-2"></i> Edit</a></li>
+                              <li><a href="#"><i class="ti-trash ml-2"></i> Delete</a></li>
+                          </ul>
+                          <a href="#" class="btn btn-outline-success">Apply</a>
+                      </div>
+                        <table class="table table-bordered">
+                          <thead class="thead-light">
+                            <tr>
+                              <th class="span1"><input type="checkbox"></th>
+                              <th class="span2">Product Category Name</th>
+                              <th class="span2">Product Category Code</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td><input type="checkbox"></td>
+                              <td>Motor Salvages</td>
+                              <td>MSS</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox"></td>
+                              <td>Non-Motor Salvages</td>
+                              <td>NMS</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox"></td>
+                              <td>Auto Spares</td>
+                              <td>ASS</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox"></td>
+                              <td>Electronics</td>
+                              <td>ECS</td>
+                            </tr>
+                          </tbody>
+  
+                        </table>
+                      </div>
+                    </div>
+                   </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      <app-footer></app-footer>
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
+
