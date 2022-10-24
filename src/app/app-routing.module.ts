@@ -37,6 +37,12 @@ import { MyprofileComponent } from './myprofile/myprofile.component';
 import { AddorganistationComponent } from './organisations/addorganistation/addorganistation.component';
 import { VieworganisationsComponent } from './organisations/vieworganisations/vieworganisations.component';
 import { UsersComponent } from './users/users.component';
+import { ViewmessageComponent } from './messages/viewmessage/viewmessage.component';
+import { AddmessageComponent } from './messages/addmessage/addmessage.component';
+import { ServicecategoryComponent } from './setting/servicecategory/servicecategory.component';
+import { CountriesComponent } from './setting/countries/countries.component';
+import { ProductcategoriesComponent } from './setting/productcategories/productcategories.component';
+import { SectorComponent } from './setting/sector/sector.component';
 
 const routes: Routes = [
 
@@ -85,6 +91,12 @@ const routes: Routes = [
       { path: 'view-organisation', component: VieworganisationsComponent},
       { path: 'users', component: UsersComponent},
       { path: 'subscribers', component: UsersComponent},
+      { path: 'new-message', component: AddmessageComponent},
+      { path: 'view-message', component: ViewmessageComponent},
+      { path: 'service-category', component: ServicecategoryComponent},
+      { path: 'countries', component: CountriesComponent},
+      { path: 'product-category', component: ProductcategoriesComponent},
+      { path: 'sectors', component: SectorComponent},
     
       { path: '**', redirectTo: 'dashboard' }
 
