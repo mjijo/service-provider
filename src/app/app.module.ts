@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { DatePipe } from '@angular/common';
+
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
@@ -55,6 +61,10 @@ import { ServicecategoryComponent } from './setting/servicecategory/servicecateg
 import { CountriesComponent } from './setting/countries/countries.component';
 import { ProductcategoriesComponent } from './setting/productcategories/productcategories.component';
 import { SectorComponent } from './setting/sector/sector.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { RecoverComponent } from './auth/recover/recover.component';
+import { UniqueComponent } from './layout/unique/unique.component';
 
 @NgModule({
   declarations: [
@@ -110,13 +120,21 @@ import { SectorComponent } from './setting/sector/sector.component';
     ServicecategoryComponent,
     CountriesComponent,
     ProductcategoriesComponent,
-    SectorComponent
+    SectorComponent,
+    LoginComponent,
+    RegisterComponent,
+    RecoverComponent,
+    UniqueComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    DatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

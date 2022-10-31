@@ -1,6 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { CommonComponent } from './layout/common/common.component';
+import { UniqueComponent } from './layout/unique/unique.component';
+
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { RecoverComponent } from './auth/recover/recover.component';
+
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { MytaskComponent } from './task/mytask/mytask.component';
@@ -47,14 +54,10 @@ import { SectorComponent } from './setting/sector/sector.component';
 const routes: Routes = [
 
   {
-
     path: '',
     component: CommonComponent,
     children: [
-      
-
       { path: 'dashboard', component: DashboardComponent },
-      { path: '', component: DashboardComponent},
       { path: 'notifications', component: NotificationsComponent },
       { path: 'my-tasks', component: MytaskComponent },
       { path: 'add-appointment', component: AddappointmentComponent },
@@ -97,23 +100,33 @@ const routes: Routes = [
       { path: 'countries', component: CountriesComponent},
       { path: 'product-category', component: ProductcategoriesComponent},
       { path: 'sectors', component: SectorComponent},
-    
-      { path: '**', redirectTo: 'dashboard' }
-
+      { path: '', component: DashboardComponent}
     ]
-
   },
-
+  {
+    path: 'auth',
+    component: UniqueComponent,
+    children: [
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
+      { path: 'recover', component: RecoverComponent },
+      { path: '', component: LoginComponent }
+    ]
+  },
   // otherwise redirect to home
-
   { path: '**', redirectTo: '' }
 
 ];
 
-​
+/* documentation at https://angular.io/api/router/ExtraOptions */
+const routingOptions: any = {
+  scrollPositionRestoration: 'enabled',
+  onSameUrlNavigation: 'reload',
+  initialNavigation: 'disabled', // not needed from v11
+}
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, routingOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
