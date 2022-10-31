@@ -74,10 +74,13 @@ export class DataService {
 
   authUsr(){
     let usrCheck = localStorage.getItem(this.apiService.getEndpoints().local_storage.user);
+    console.log('user check >',usrCheck);
+
     if(usrCheck){
       let payload = this.rot47(usrCheck);
       let usrObj = JSON.parse(payload.toString());
       if('user' in usrObj){
+        this.router.navigate(["/dashboard"]);
         return true;
       }else{
         this.router.navigate(["/auth/login"]);
