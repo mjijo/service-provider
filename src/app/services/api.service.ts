@@ -6,7 +6,7 @@ import { Observable, throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private baseApiPath = 'http://service-p-api.test';
+  private baseApiPath = 'http://109.123.241.92/~serverke488clint/api/public';
 
   constructor(private httpClient: HttpClient)
   {
