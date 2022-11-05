@@ -1,4 +1,7 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms'
 import { RouterModule, Routes } from '@angular/router';
 import { CommonComponent } from './layout/common/common.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -113,7 +116,11 @@ const routes: Routes = [
 ​
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
