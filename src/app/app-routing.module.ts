@@ -9,12 +9,19 @@ import { RegisterComponent } from './auth/register/register.component';
 import { RecoverComponent } from './auth/recover/recover.component';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
+
 import { NotificationsComponent } from './notifications/notifications.component';
+
 import { MytaskComponent } from './task/mytask/mytask.component';
+import { AddtaskComponent } from './task/addtask/addtask.component';
+import { ViewtaskComponent } from './task/viewtask/viewtask.component';
+
 import { AddappointmentComponent } from './appointments/addappointment/addappointment.component';
 import { ViewappointmentsComponent } from './appointments/viewappointments/viewappointments.component';
+
 import { AddquotationComponent } from './quotation/addquotation/addquotation.component';
 import { ViewquotationComponent } from './quotation/viewquotation/viewquotation.component';
+
 import { MybidsComponent } from './bids/mybids/mybids.component';
 import { AddauctionComponent } from './auctions/addauction/addauction.component';
 import { ViewAuctionsComponent } from './auctions/view-auctions/view-auctions.component';
@@ -22,8 +29,7 @@ import { AuctionWinnersComponent } from './auctions/auction-winners/auction-winn
 import { OrdersComponent } from './orders/orders.component';
 import { AddInvoiceComponent } from './invoices/add-invoice/add-invoice.component';
 import { ViewInvoiceComponent } from './invoices/view-invoice/view-invoice.component';
-import { AddtaskComponent } from './task/addtask/addtask.component';
-import { ViewtaskComponent } from './task/viewtask/viewtask.component';
+
 import { ReferredclientsComponent } from './referredclients/referredclients.component';
 import { AddserviceComponent } from './ourservices/addservice/addservice.component';
 import { ViewservicesComponent } from './ourservices/viewservices/viewservices.component';
@@ -59,11 +65,25 @@ const routes: Routes = [
     children: [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'notifications', component: NotificationsComponent },
-      { path: 'my-tasks', component: MytaskComponent },
-      { path: 'add-appointment', component: AddappointmentComponent },
-      { path: 'view-appointments', component: ViewappointmentsComponent },
-      { path: 'add-quotation', component: AddquotationComponent },
-      { path: 'view-quotations', component: ViewquotationComponent },
+      { path: 'tasks', children: [
+                                  { path: 'all', component: MytaskComponent },
+                                  { path: 'add', component: AddtaskComponent },
+                                  { path: 'view/:id', component: ViewtaskComponent},
+                                  { path: '', component: MytaskComponent }
+                                ]
+      },
+      { path: 'appointments', children: [
+                                  { path: 'all', component: ViewappointmentsComponent },
+                                  { path: 'add', component: AddappointmentComponent},
+                                  { path: '', component: ViewappointmentsComponent }
+                                ]
+      },
+      { path: 'quotations', children: [
+                                  { path: 'all', component: ViewquotationComponent },
+                                  { path: 'add', component: AddquotationComponent},
+                                  { path: '', component: ViewquotationComponent }
+                                ]
+      },
       { path: 'my-bids', component: MybidsComponent },
       { path: 'add-auction', component: AddauctionComponent },
       { path: 'view-auctions', component: ViewAuctionsComponent },
