@@ -1,133 +1,166 @@
  <!-- partial -->
  <div class="container-fluid page-body-wrapper">
+
     <!-- partial:partials/_sidebar.html -->
-<app-sidebar></app-sidebar>
+    <app-sidebar></app-sidebar>
     <!-- partial -->
+
     <div class="main-panel">
       <div class="content-wrapper">
-       <div class="row">
-        <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                        <div class="card-body">
-                          <h4 class="card-title">Tasks</h4>
-                          <hr>
-                          <div class="row">
+        <div class="row">
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Tasks</h4>
+                <hr>
+                <div class="row">
 
-                            <!---->
-                            <div class="container-fluid">
-                              <a href="add-task.html" class="btn btn-success rounded-0"><i class="ti-plus mr-1"></i>NEW TASK</a>
-                             <div class="btn-group hidden-phone">
-                                     <a data-toggle="dropdown" href="#" class="btn btn-outline-light rounded-0" aria-expanded="false">
-                                         Status
-                                         <i class="ti-angle-down "></i>
-                                     </a>
-                                     <ul class="dropdown-menu p-2">
-                                         <li><a href="#"><i class="ti-angle-double-right"></i>Pending</a></li>
-                                         <li><a href="#"><i class="ti-angle-double-right"></i>Complete</a></li>
-                                         <li class="divider"></li>
-                                         <li><a href="#"><i class="ti-angle-double-right"></i>Invoiced</a></li>
-                                         <li><a href="#"><i class="ti-angle-double-right"></i>Cancelled</a></li>
-                                         <li><a href="#"><i class="ti-angle-double-right"></i>Paid</a></li>
-                                         <li><a href="#"><i class="ti-angle-double-right"></i>Unsatisfactory</a></li>
-                                         <li><a href="#"><i class="ti-angle-double-right"></i>Re-open</a></li>
-                                     </ul>
-                                 </div>
-                            <div class="btn-group hidden-phone">
-                                     <a data-toggle="dropdown" href="#" class="btn btn-outline-light rounded-0" aria-expanded="false">
-                                         More Actions
-                                         <i class="ti-angle-down "></i>
-                                     </a>
-                                     <ul class="dropdown-menu p-2">
-                                         <li><a href="#"><i class="ti-pencil"></i> Mark as Read</a></li>
-                                         <li><a href="#"><i class="ti-trash"></i> Accept</a></li>
-                                         <li><a href="#"><i class="ti-trash"></i> Reject</a></li>
-                                     </ul>
-                                 </div>
-                                 <ul class="unstyled inbox-pagination">
-                                     <li><span>1-50 of 234</span></li>
-                                     <li>
-                                         <a class="np-btn" href="#"><i class="ti-angle-left  pagination-left"></i></a>
-                                     </li>
-                                     <li>
-                                         <a class="np-btn" href="#"><i class="ti-angle-right pagination-right"></i></a>
-                                     </li>
-                                 </ul>
-                               </div>
-                            <!---->
+                  <!---->
+                  <div class="container-fluid" style="margin-bottom: 1rem;">
+                    <a (click)="showModal('newTaskMod')" class="btn btn-success rounded-0"><i class="ti-plus mr-1"></i>NEW TASK</a>
 
-                           </div>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="table-responsive">
-                                <table class="table table-condensed table-hover">
-                                  <thead>
-                                    <tr>
-                                      <th scope="col" class="span1"><input type="checkbox"></th>
-                                      <th scope="col" class="span2">Code</th>
-                                      <th scope="col" class="span2">Task Summary</th>
-                                      <th scope="col" class="span2">Due Date</th>
-                                      <th scope="col" class="span2">From</th>
-                                      <th scope="col" class="span2">Assigned To</th>
-                                      <th scope="col" class="span2">Status</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td><input type="checkbox"> </td>
-                                      <td>123</td>
-                                      <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
-                                      <td>14 May 2020</td>
-                                      <td><strong>john.doe@gmail.com</strong></td>
-                                      <td><strong>mary.doe@gmail.com</strong></td>
-                                      <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
-                                    </tr>
-                                    <tr>
-                                      <td><input type="checkbox"> </td>
-                                      <td>123</td>
-                                      <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
-                                      <td>14 May 2020</td>
-                                      <td><strong>john.doe@gmail.com</strong></td>
-                                      <td><strong>mary.doe@gmail.com</strong></td>
-                                      <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
-                                    </tr>
-                                    <tr>
-                                      <td><input type="checkbox"> </td>
-                                      <td>123</td>
-                                      <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
-                                      <td>14 May 2020</td>
-                                      <td><strong>john.doe@gmail.com</strong></td>
-                                      <td><strong>mary.doe@gmail.com</strong></td>
-                                      <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
-                                    </tr>
-                                    <tr>
-                                      <td><input type="checkbox"> </td>
-                                      <td>123</td>
-                                      <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
-                                      <td>14 May 2020</td>
-                                      <td><strong>john.doe@gmail.com</strong></td>
-                                      <td><strong>mary.doe@gmail.com</strong></td>
-                                      <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
+                    <div class="btn-group hidden-phone">
+                      <a data-toggle="dropdown" href="#" class="btn btn-outline-light rounded-0" aria-expanded="false">
+                          Status
+                          <i class="ti-angle-down "></i>
+                      </a>
+                      <ul class="dropdown-menu p-2">
+                          <li><a href="#"><i class="ti-angle-double-right"></i>Pending</a></li>
+                          <li><a href="#"><i class="ti-angle-double-right"></i>Complete</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#"><i class="ti-angle-double-right"></i>Invoiced</a></li>
+                          <li><a href="#"><i class="ti-angle-double-right"></i>Cancelled</a></li>
+                          <li><a href="#"><i class="ti-angle-double-right"></i>Paid</a></li>
+                          <li><a href="#"><i class="ti-angle-double-right"></i>Unsatisfactory</a></li>
+                          <li><a href="#"><i class="ti-angle-double-right"></i>Re-open</a></li>
+                      </ul>
+                    </div>
 
-                          </div>
-                        </div>
+                    <div class="btn-group hidden-phone">
+                      <a data-toggle="dropdown" href="#" class="btn btn-outline-light rounded-0" aria-expanded="false">
+                          More Actions
+                          <i class="ti-angle-down "></i>
+                      </a>
+                      <ul class="dropdown-menu p-2">
+                          <li><a href="#"><i class="ti-pencil"></i> Mark as Read</a></li>
+                          <li><a href="#"><i class="ti-trash"></i> Accept</a></li>
+                          <li><a href="#"><i class="ti-trash"></i> Reject</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <!---->
+
                 </div>
+
+                <div class="row">
+
+                  <div class="col-md-12">
+                    <div class="table-responsive">
+                      <!-- tasks table -->
+                      <table class="table table-condensed table-hover" id="myTasks">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="span1"><input type="checkbox"></th>
+                            <th scope="col" class="span2">Code</th>
+                            <th scope="col" class="span2">Task Summary</th>
+                            <th scope="col" class="span2">Due Date</th>
+                            <th scope="col" class="span2">From</th>
+                            <th scope="col" class="span2">Assigned To</th>
+                            <th scope="col" class="span2">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><input type="checkbox"> </td>
+                            <td>123</td>
+                            <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
+                            <td>12 January 2020</td>
+                            <td><strong>john.doe@gmail.com</strong></td>
+                            <td><strong>mary.doe@gmail.com</strong></td>
+                            <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"> </td>
+                            <td>124</td>
+                            <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
+                            <td>13 June 2019</td>
+                            <td><strong>james.doe@gmail.com</strong></td>
+                            <td><strong>millie.doe@gmail.com</strong></td>
+                            <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"> </td>
+                            <td>125</td>
+                            <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
+                            <td>15 April 2022</td>
+                            <td><strong>mike.doe@gmail.com</strong></td>
+                            <td><strong>stacy.doe@gmail.com</strong></td>
+                            <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"> </td>
+                            <td>126</td>
+                            <td><a href="task-details.html">What is Lorem Ipsum?</a></td>
+                            <td>16 May 2020</td>
+                            <td><strong>phillip.doe@gmail.com</strong></td>
+                            <td><strong>lulu.doe@gmail.com</strong></td>
+                            <th class="span2"><label class="badge badge-info float-sm-right">Status</label></th>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <!-- end tasks table -->
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
-       </div>
       </div>
       <!-- content-wrapper ends -->
+
+      <!-- new task modal -->
+      <div class="modl-overlay modl-hidden"></div>
+      <div class="modl-parent" id="newTaskMod">
+        <div class="modl">
+          <span class="modlX" (click)="closeModal('newTaskMod')">&times;</span>
+          <div class="row">
+            <div class="col-sm-12">
+              <h3 class="modl-title">ADD A NEW TASK</h3>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ulorem lomre t labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          
+        </div>
+      </div>
+      <!-- end new task modal -->
+
       <!-- partial:partials/_footer.html -->
       <footer class="footer">
         <div class="d-sm-flex justify-content-center justify-content-sm-between">
           <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2020 <a href="#" target="_blank">ServiceProvider</a>. All rights reserved.</span>
-
         </div>
       </footer>
       <!-- partial -->
+
     </div>
     <!-- main-panel ends -->
   </div>

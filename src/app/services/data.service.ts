@@ -12,6 +12,7 @@ export class DataService {
   public dateToday;
   
   public user: any = null;
+  public user_profile: any = null;
   public isAdmin: boolean = false;
   public isStaff: boolean = false;
   public userId: any = null;
@@ -79,6 +80,11 @@ export class DataService {
     if(usrCheck){
       let payload = this.rot47(usrCheck);
       let usrObj = JSON.parse(payload.toString());
+      console.log('User Obj > ',usrObj);
+
+      this.user_profile = ('profile' in usrObj ? usrObj.profile : null);
+      this.user = ('user' in usrObj ? usrObj.user : null);
+      
       if('user' in usrObj){
         this.router.navigate(["/dashboard"]);
         return true;
@@ -97,6 +103,10 @@ export class DataService {
     if(usrCheck){
       let payload = this.rot47(usrCheck);
       let usrObj = JSON.parse(payload.toString());
+
+      this.user_profile = ('profile' in usrObj ? usrObj.profile : null);
+      this.user = ('user' in usrObj ? usrObj.user : null);
+
       if('user' in usrObj){
         return usrObj;
       }else{ return null; }

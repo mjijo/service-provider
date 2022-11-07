@@ -30,7 +30,9 @@
             "styles": [
               "src/styles.scss",
               "src/assets/css/styles.css",
-              "src/assets/css/themify-icons.css"
+              "src/assets/css/themify-icons.css",
+              "src/assets/vendors/datatables/DataTables-1.12.1/css/jquery.dataTables.min.css",
+              "src/assets/vendors/datatables/Buttons-2.2.3/css/buttons.dataTables.min.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
@@ -45,7 +47,13 @@
               "src/assets/js/documentation.js",
               "src/assets/js/file-upload.js", 
               "src/assets/js/tabs.js",
-              "src/assets/js/tooltips.js"
+              "src/assets/js/tooltips.js",
+              "src/assets/vendors/datatables/DataTables-1.12.1/js/jquery.dataTables.min.js",
+              "src/assets/vendors/datatables/Buttons-2.2.3/js/dataTables.buttons.min.js",
+              "src/assets/vendors/datatables/JSZip-2.5.0/jszip.min.js",
+              "src/assets/vendors/datatables/pdfmake-0.1.36/pdfmake.min.js",
+              "src/assets/vendors/datatables/pdfmake-0.1.36/vfs_fonts.js",
+              "src/assets/vendors/datatables/Buttons-2.2.3/js/buttons.html5.min.js"
             ]
           },
           "configurations": {
