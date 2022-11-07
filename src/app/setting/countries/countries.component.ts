@@ -104,8 +104,7 @@ export class CountriesComponent implements OnInit {
               country_id: null,
               country_name: null,
               country_code: null,
-              phone_code: null,
-              user_id: null
+              phone_code: null
             };
             
           }else{

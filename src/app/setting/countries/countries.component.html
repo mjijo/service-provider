@@ -30,7 +30,6 @@
                             <input type="text" class="form-control" [(ngModel)]="this_country.phone_code" [ngModelOptions]="{standalone: true}" [value]="this_country.phone_code" (change)="validateInputs()">
                           </div>
   
-  
                           <button class="btn btn-primary" [disabled]="validateInputs()" (click)="addCountry()">{{isUpdate == true ? 'Update' : 'Create'}} Country </button>
                         </form>
                       </div>

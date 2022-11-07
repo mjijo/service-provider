@@ -43,7 +43,8 @@ export class ApiService {
           add_country: 'addCntry'
         },
         service_categories: {
-          get_all_categories: 'getAllServiceCategories'
+          get_all_categories: 'getAllServiceCategories',
+          add_category: 'addServiceCat'
         }
       },
       local_storage: {
