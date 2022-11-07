@@ -41,6 +41,9 @@ export class ApiService {
         countries: {
           get_all_countries: 'getAllCountries',
           add_country: 'addCntry'
+        },
+        service_categories: {
+          get_all_categories: 'getAllServiceCategories'
         }
       },
       local_storage: {
