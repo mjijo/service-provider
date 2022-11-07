@@ -45,6 +45,10 @@ export class ApiService {
         service_categories: {
           get_all_categories: 'getAllServiceCategories',
           add_category: 'addServiceCat'
+        },
+        product_categories: {
+          get_all_product_categories: 'getProdCats',
+          add_product_cat: 'addProdCat'
         }
       },
       local_storage: {
