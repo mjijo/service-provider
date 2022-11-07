@@ -37,6 +37,12 @@ export class ApiService {
   getEndpoints(){
     return {
       sign_in: 'usrLogin',
+      settings: {
+        countries: {
+          get_all_countries: 'getAllCountries',
+          add_country: 'addCntry'
+        }
+      },
       local_storage: {
         user: 'prtlsplocdat'
       }

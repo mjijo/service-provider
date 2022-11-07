@@ -17,21 +17,21 @@
                       <div class="col-md-5">
                         <form class="form-sample">
                           <div class="form-group">
-                            <label for="exampleInputName1">Country Name</label>
-                            <input type="text" class="form-control">
+                            <label for="country_name">Country Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="this_country.country_name" [ngModelOptions]="{standalone: true}" [value]="this_country.country_name" (change)="validateInputs()">
                             <p class="small">The name is how it appears on your site.</p>
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputName1">Country Code</label>
-                            <input type="text" class="form-control">
+                            <label for="country_code">Country Code</label>
+                            <input type="text" class="form-control" [(ngModel)]="this_country.country_code" [ngModelOptions]="{standalone: true}" [value]="this_country.country_code" (change)="validateInputs()">
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputName1">Phone Code</label>
-                            <input type="text" class="form-control">
+                            <label for="phone_code">Phone Code</label>
+                            <input type="text" class="form-control" [(ngModel)]="this_country.phone_code" [ngModelOptions]="{standalone: true}" [value]="this_country.phone_code" (change)="validateInputs()">
                           </div>
   
   
-                          <button class="btn btn-primary">Update Country </button>
+                          <button class="btn btn-primary" [disabled]="validateInputs()" (click)="addCountry()">{{isUpdate == true ? 'Update' : 'Create'}} Country </button>
                         </form>
                       </div>
                       <div class="col-md-7">
@@ -57,24 +57,14 @@
                             </tr>
                           </thead>
                           <tbody>
-                            <tr>
-                              <td><input type="checkbox"></td>
-                              <td>Kenya</td>
-                              <td>KE</td>
-                              <td><strong>+254</strong></td>
-                            </tr>
-                            <tr>
-                              <td><input type="checkbox"></td>
-                              <td>Zambia</td>
-                              <td>ZM</td>
-                              <td><strong>+260</strong></td>
-                            </tr>
-                            <tr>
-                              <td><input type="checkbox"></td>
-                              <td>Nigeria</td>
-                              <td>NG</td>
-                              <td><strong>+234</strong></td>
-                            </tr>
+                            <ng-container *ngFor="let country of allCountries; index as i">
+                              <tr (click)="viewCountry(country)">
+                                <td><input type="checkbox"></td>
+                                <td>{{country.country_name}}</td>
+                                <td>{{country.country_code}}</td>
+                                <td><strong>{{country.phone_code}}</strong></td>
+                              </tr>
+                            </ng-container>
                           </tbody>
   
                         </table>
