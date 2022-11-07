@@ -57,7 +57,7 @@
                           </thead>
                           <tbody>
                             <ng-container *ngFor="let country of allCountries; index as i">
-                              <tr (click)="viewCountry(country)">
+                              <tr class="country-row" (click)="viewCountry(country)">
                                 <td><input type="checkbox"></td>
                                 <td>{{country.country_name}}</td>
                                 <td>{{country.country_code}}</td>

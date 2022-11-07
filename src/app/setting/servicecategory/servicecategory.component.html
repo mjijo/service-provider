@@ -70,7 +70,7 @@
                           </thead>
                           <tbody>
                             <ng-container *ngFor="let service_category of allServiceCategories; index as i">
-                              <tr>
+                              <tr class="service-cat" (click)="viewServiceCategory(service_category)">
                                 <td><input type="checkbox"></td>
                                 <td>{{service_category.service_category_name}}</td>
                                 <td>{{service_category.service_category_slug}}</td>
