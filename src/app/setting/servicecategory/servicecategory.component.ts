@@ -50,6 +50,7 @@ export class ServicecategoryComponent implements OnInit {
       status = (cat_name_err || cat_slug_err ? true : false);
       return status;
     }else{
+      status = false;
       return status;
     }
   }

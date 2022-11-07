@@ -48,6 +48,7 @@ export class ProductcategoriesComponent implements OnInit {
       status = (product_name_err || product_code_err ? true : false);
       return status;
     }else{
+      status = false;
       return status;
     }
   }
