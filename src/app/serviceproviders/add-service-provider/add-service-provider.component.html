@@ -1,0 +1,254 @@
+<div class="container-fluid page-body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+ <app-sidebar></app-sidebar>
+    <!-- partial -->
+    <div class="main-panel">        
+      <div class="content-wrapper">
+        <div class="row">
+          
+          <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Add Service Provider</h4>
+                <p class="card-description">
+                  Create users and upload documents and images of the user..
+                </p>
+                <hr>
+                <form class="forms-sample">
+                  
+                  <div class="form-group">
+                      <label for="exampleInputName1">Full Names</label>
+                      <input type="text" class="form-control" [(ngModel)]="new_service_provider.full_name" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.full_name" (change)="validateInputs()">
+                    </div>
+                    <div class="form-group">
+                      <label>Upload Your Logo:</label>
+                      <input type="file" name="img[]" class="file-upload-default">
+                      <div class="input-group col-xs-12">
+                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Your Logo" [(ngModel)]="new_service_provider.logo" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.logo" (change)="validateInputs()">
+                        <span class="input-group-append">
+                          <input class="file-upload-browse btn btn-primary" type="file" value="Upload" [(ngModel)]="new_service_provider.logo" [ngModelOptions]="{standalone: true}">
+                        </span>
+                      </div>
+                    </div>  
+                    <div class="form-group">
+                      <label>Description:</label>
+                      <input type="file" name="img[]" class="file-upload-default">
+                      <textarea name="" id="" cols="30" rows="10" class="form-control" [(ngModel)]="new_service_provider.desc" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.desc" (change)="validateInputs()"></textarea>
+                    </div>   
+                    <div class="form-group">
+                      <label for="exampleInputName1">Phone number</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="07100100100" [(ngModel)]="new_service_provider.phone" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.phone" (change)="validateInputs()">
+                    </div> 
+                  <div class="form-group">
+                    <label for="exampleInputName1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputName1" placeholder="your@email.com" [(ngModel)]="new_service_provider.email" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.email" (change)="validateInputs()">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName1">Country</label>
+                    <select [(ngModel)]="new_service_provider.country_id" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.country_id" (change)="validateInputs()">
+                        <ng-container *ngIf="allCountries.length > 0">
+                            <ng-container *ngFor="let country of allCountries; index as i">
+                                <option [value]="country.country_id">{{country.country_name}}</option>
+                            </ng-container>
+                        </ng-container>
+                        <ng-container *ngIf="allCountries.length == 0">
+                            <option disabled>No Countries Available</option>
+                        </ng-container>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName1">Currency: </label>
+                    <input type="text" class="form-control" disabled [(ngModel)]="new_service_provider.currency" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.currency" (change)="validateInputs()">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName1">Contact Email</label>
+                    <input type="email" class="form-control" [(ngModel)]="new_service_provider.email" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.email" (change)="validateInputs()">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputName1">Contact No.:</label>
+                    <input type="text" class="form-control" [(ngModel)]="new_service_provider.contact_no" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.contact_no" (change)="validateInputs()">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleSelectGender">Sector/Industry:</label>
+                    <select [(ngModel)]="new_service_provider.sector_id" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.sector_id" (change)="validateInputs()">
+                        <ng-container *ngIf="allSectors.length > 0">
+                            <ng-container *ngFor="let sector of allSectors; index as i">
+                                <option [value]="sector.industry_sector_id">{{sector.sector_name}}</option>
+                            </ng-container>
+                        </ng-container>
+                        <ng-container *ngIf="allSectors.length == 0">
+                            <option disabled>No Sectors Available</option>
+                        </ng-container>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleSelectGender">Service Category:</label>
+                      <select [(ngModel)]="new_service_provider.service_category_id" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.service_category_id" (change)="validateInputs()">
+                        <ng-container *ngIf="allServiceCategories.length > 0">
+                            <ng-container *ngFor="let category of allServiceCategories; index as i">
+                                <option [value]="category.service_category_id">{{category.service_category_name}}</option>
+                            </ng-container>
+                        </ng-container>
+                        <ng-container *ngIf="allServiceCategories.length == 0">
+                            <option disabled>No Categories Available</option>
+                        </ng-container>
+                      </select>
+                      </div>
+                  
+                    <div class="form-group">
+                      <label for="exampleInputName1">Registration No.:</label>
+                      <input type="text" class="form-control" [(ngModel)]="new_service_provider.reg_number" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.reg_number" (change)="validateInputs()">
+                    </div>
+                    <div class="form-group">
+                      <label>Registration Cetificate:</label>
+                      <input type="file" name="certificate[]" class="file-upload-default">
+                      <div class="input-group col-xs-12">
+                        <input type="text" class="form-control file-upload-info" disabled placeholder="Registration Cetificate" [(ngModel)]="new_service_provider.reg_certificate" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.reg_certificate" (change)="validateInputs()">
+                        <span class="input-group-append">
+                          <input class="file-upload-browse btn btn-primary" type="file" value="Upload" [(ngModel)]="new_service_provider.reg_certificate" [ngModelOptions]="{standalone: true}">
+                        </span>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Tax PIN No.:</label>
+                      <input type="text" class="form-control" [(ngModel)]="new_service_provider.tax_number" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.tax_number" (change)="validateInputs()">
+                    </div>
+                    
+                    
+                  <div class="form-group">
+                    <label>Upload Tax Cetificate:</label>
+                    <input type="file" name="img[]" class="file-upload-default">
+                    <div class="input-group col-xs-12">
+                        <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Your Logo" [(ngModel)]="new_service_provider.tax_certificate" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.tax_certificate" (change)="validateInputs()">
+                        <span class="input-group-append">
+                            <input class="file-upload-browse btn btn-primary" type="file" value="Upload" [(ngModel)]="new_service_provider.tax_certificate" [ngModelOptions]="{standalone: true}">
+                        </span>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group">
+                  <p>Contact Persons</p>
+                  <div class="table-responsive pt-3">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Full Names</th>
+                          <th>Email</th>
+                          <th>Phone</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <ng-container *ngFor="let contact_person of new_service_provider.contact_persons; index as i">
+                            <tr class="table-info">
+                                <td>{{i+1}}</td>
+                                <td>
+                                  <input type="text" class="form-control" [(ngModel)]="contact_person.full_name" [ngModelOptions]="{standalone: true}" [value]="contact_person.full_name">
+                                </td>
+                                <td>
+                                  <input type="text" class="form-control" [(ngModel)]="contact_person.email" [ngModelOptions]="{standalone: true}" [value]="contact_person.email">
+                                </td>
+                                <td>
+                                  <input type="text" class="form-control" [(ngModel)]="contact_person.phone" [ngModelOptions]="{standalone: true}" [value]="contact_person.phone">
+                                </td>
+                                <td>
+                                  <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-outline-success" (click)="increaseContactPerson()"><i class="ti-plus"></i></button>
+                                    <button type="button" class="btn btn-outline-danger"><i class="ti-close"></i></button>
+                                  </div>
+                                </td>
+                            </tr>
+                        </ng-container>
+                      </tbody>
+                    </table>
+                  </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <p>Create Branches (<i>if available)</i></p>
+                    <div class="table-responsive pt-3">
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                              
+                            <th>
+                              #
+                            </th>
+                            <th>
+                             Location
+                            </th>
+                            <th>
+                              Email
+                            </th>
+                            <th>
+                              Phone
+                            </th>
+                            <th>
+                              Action
+                            </th>
+                            <th>
+                              Box Address
+                            </th>
+                            <th>
+                              Hours
+                            </th>
+                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="table-info">
+                            <td>
+                              1
+                            </td>
+                            <td>
+                              <input type="text" class="form-control">
+                            </td>
+                            <td>
+                              <input type="text" class="form-control">
+                            </td>
+                            <td>
+                              <input type="text" class="form-control">
+                            </td>
+                            <td>
+                              <input type="text" class="form-control">
+                            </td>
+                            <td>
+                              <input type="text" class="form-control">
+                            </td>
+                            <td>
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                               
+                                <button type="button" class="btn btn-outline-success"><i class="ti-plus"></i></button>
+                                <button type="button" class="btn btn-outline-danger"><i class="ti-close"></i></button>
+                                
+                              </div>
+                            </td>
+                            
+                          </tr>
+                          
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                    </div>
+
+                  <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
+                  <button type="submit" class="btn btn-success mr-2"><i class="ti-save"></i> Save</button>
+                  <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+      <!-- partial:partials/_footer.html -->
+      <app-footer></app-footer>
+      <!-- partial -->
+    </div>
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->

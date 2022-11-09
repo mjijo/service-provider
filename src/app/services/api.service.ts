@@ -55,6 +55,10 @@ export class ApiService {
           add_sector: 'addSctor'
         }
       },
+      tasks: {
+        get_tasks: 'getAllTasks',
+        add_tasks: 'addTask'
+      },
       local_storage: {
         user: 'prtlsplocdat'
       }

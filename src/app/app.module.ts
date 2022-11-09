@@ -65,6 +65,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { RecoverComponent } from './auth/recover/recover.component';
 import { UniqueComponent } from './layout/unique/unique.component';
+import { AddServiceProviderComponent } from './serviceproviders/add-service-provider/add-service-provider.component';
+import { ViewServiceProvidersComponent } from './serviceproviders/view-service-providers/view-service-providers.component';
 
 @NgModule({
   declarations: [
@@ -124,7 +126,9 @@ import { UniqueComponent } from './layout/unique/unique.component';
     LoginComponent,
     RegisterComponent,
     RecoverComponent,
-    UniqueComponent
+    UniqueComponent,
+    AddServiceProviderComponent,
+    ViewServiceProvidersComponent
   ],
   imports: [
     BrowserModule,

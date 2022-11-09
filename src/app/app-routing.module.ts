@@ -53,6 +53,9 @@ import { UsersComponent } from './users/users.component';
 import { ViewmessageComponent } from './messages/viewmessage/viewmessage.component';
 import { AddmessageComponent } from './messages/addmessage/addmessage.component';
 
+import { AddServiceProviderComponent } from './serviceproviders/add-service-provider/add-service-provider.component';
+import { ViewServiceProvidersComponent } from './serviceproviders/view-service-providers/view-service-providers.component';
+
 import { ServicecategoryComponent } from './setting/servicecategory/servicecategory.component';
 import { CountriesComponent } from './setting/countries/countries.component';
 import { ProductcategoriesComponent } from './setting/productcategories/productcategories.component';
@@ -95,11 +98,16 @@ const routes: Routes = [
       { path: 'add-task', component: AddtaskComponent },
       { path: 'view-task', component: ViewtaskComponent },
       { path: 'referred-clients', component: ReferredclientsComponent },
+      { path: 'service-providers', children: [
+                                  { path: 'all', component: ViewServiceProvidersComponent },
+                                  { path: 'add', component: AddServiceProviderComponent},
+                                  { path: 'create', component: AddServiceProviderComponent },
+                                  { path: 'view/:id', component: AddServiceProviderComponent },
+                                  { path: 'my-panel', component: MyPanelComponent },
+                                ]
+      },
       { path: 'add-service', component: AddserviceComponent },
       { path: 'view-service', component: ViewservicesComponent },
-      { path: 'add-serviceprovider', component: AddServiceComponent },
-      { path: 'view-serviceprovider', component: ViewServicesComponent },
-      { path: 'my-panel', component: MyPanelComponent },
       { path: 'add-product', component: AddproductComponent },
       { path: 'view-products', component: ViewproductsComponent },
       { path: 'add-tender', component: AddtenderComponent },
