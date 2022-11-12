@@ -34,6 +34,17 @@ export class ApiService {
     return this.httpClient.post(`${this.baseApiPath}/${param}`, data)
   }
 
+  upload(file:File,path:string):Observable<any> {
+    // Create form data
+    let formData = new FormData(); 
+      
+    // Store form name as "file" with file data
+    formData.append("file", file, file.name);
+      
+    // Make http post request over api
+    return this.post(formData,path)
+  }
+
   getEndpoints(){
     return {
       sign_in: 'usrLogin',

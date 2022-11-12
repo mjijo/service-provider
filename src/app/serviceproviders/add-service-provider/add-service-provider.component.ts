@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Timestamp } from 'rxjs';
 
 import { ApiService } from '../../services/api.service';
 import { DataService } from '../../services/data.service';
@@ -18,6 +19,7 @@ export class AddServiceProviderComponent implements OnInit {
     country_id: null,
     currency: 'KES',
     contact_no: null,
+    contact_email: null,
     sector_id: null,
     service_category_id: null,
     reg_number: null,
@@ -34,6 +36,7 @@ export class AddServiceProviderComponent implements OnInit {
   public allCountries: any = [];
   public allSectors: any = [];
   public allServiceCategories: any = [];
+  public reg_certificate_file: File | any;
 
   constructor(private apiService: ApiService,
               private dataService: DataService)
@@ -87,17 +90,60 @@ export class AddServiceProviderComponent implements OnInit {
     );
   }
 
+  setLogo(event:Event|any){
+    let file:File = event.target.files[0];
+    if (file) {
+      this.new_service_provider.logo = file.name;
+      let formData = new FormData();
+      formData.append("logo_file", file);
+      console.log('logo file >>',file);
+      // const upload$ = this.http.post("/api/thumbnail-upload", formData);
+    }
+  }
+
+  setRegCertificate(event:Event|any){
+    let file:File = event.target.files[0];
+    if (file) {
+      this.new_service_provider.reg_certificate = file.name;
+      let formData = new FormData();
+      formData.append("reg_cert_file", file);
+      console.log('reg cert file >>',file);
+      // const upload$ = this.http.post("/api/thumbnail-upload", formData);
+    }
+  }
+
+  setTaxCertificate(event:Event|any){
+    let file:File = event.target.files[0];
+    if (file) {
+      this.new_service_provider.tax_certificate = file.name;
+      let formData = new FormData();
+      formData.append("tax_cert_file", file);
+      console.log('tax cert file >>',file);
+      // const upload$ = this.http.post("/api/thumbnail-upload", formData);
+    }
+  }
+
   validateInputs(){
     //
   }
 
   createNewServiceProvider(){
-    //
+    console.log('Payload > ',this.new_service_provider);
+    console.log('Certificate File > ',this.reg_certificate_file);
   }
 
   increaseContactPerson(){
+    this.new_service_provider.contact_persons.push(this.person);
+    console.log(this.new_service_provider.contact_persons);
+  }
+
+  increaseBranches(){
     this.new_service_provider.branches.push(this.branch);
     console.log(this.new_service_provider.branches);
+  }
+
+  decreaseFromList(index:number,arr:any){
+    arr.splice(index, 1); // 2nd parameter means remove one item only
   }
 
 }
