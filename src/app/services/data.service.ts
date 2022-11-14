@@ -13,9 +13,17 @@ export class DataService {
   
   public user: any = null;
   public user_profile: any = null;
-  public isAdmin: boolean = false;
-  public isStaff: boolean = false;
   public userId: any = null;
+
+  private isSuperAdmin: boolean = false;
+  private isAdmin: boolean = false;
+  private isStaff: boolean = false;
+  public mode: any = {
+    sa_mode: false, // super admin mode
+    ua_admin: false, // user admin mode (administrative normal user)
+    nu_mode: false // normal user mode
+  }
+
 
   constructor(private router: Router,
               private route: ActivatedRoute,
@@ -83,6 +91,27 @@ export class DataService {
       console.log('User Obj > ',usrObj);
 
       this.user_profile = ('profile' in usrObj ? usrObj.profile : null);
+      if( this.user_profile ){
+        if(this.user_profile.user_group_id == 1 || this.user_profile.user_group_id == "1"){
+          this.mode = {
+            sa_mode: true, // super admin mode
+            ua_admin: false, // user admin mode (administrative normal user)
+            nu_mode: false // normal user mode
+          }
+        }else if(this.user_profile.user_group_id == 4 || this.user_profile.user_group_id == "4"){
+          this.mode = {
+            sa_mode: false, // super admin mode
+            ua_admin: true, // user admin mode (administrative normal user)
+            nu_mode: false // normal user mode
+          }
+        }else{
+          this.mode = {
+            sa_mode: false, // super admin mode
+            ua_admin: false, // user admin mode (administrative normal user)
+            nu_mode: true // normal user mode
+          }
+        }
+      }
       this.user = ('user' in usrObj ? usrObj.user : null);
       
       if('user' in usrObj){

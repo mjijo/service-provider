@@ -3,6 +3,7 @@ import { Timestamp } from 'rxjs';
 
 import { ApiService } from '../../services/api.service';
 import { DataService } from '../../services/data.service';
+import { PluginsService } from '../../services/plugins.service';
 
 @Component({
   selector: 'app-add-service-provider',
@@ -10,6 +11,7 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./add-service-provider.component.scss']
 })
 export class AddServiceProviderComponent implements OnInit {
+  public user_mode: any = null;
   public new_service_provider: any = {
     full_name: null,
     logo: null,
@@ -31,18 +33,24 @@ export class AddServiceProviderComponent implements OnInit {
     contact_persons: [],
     branches: []
   }
-  public person:any = {full_name: null, email: null, phone: null};
-  public branch:any = {location_name: null, location_email: null, location_phone: null, action: null, address: null};
   public allCountries: any = [];
   public allSectors: any = [];
   public allServiceCategories: any = [];
+  public allEntities: any = [];
   public reg_certificate_file: File | any;
+  public isLoading: boolean = false;
+  public spCreationResponse: any = null;
+
+  private taxFile: File | null = null;
+  private regFile: File | null = null;
 
   constructor(private apiService: ApiService,
-              private dataService: DataService)
+              private dataService: DataService,
+              private pluginService: PluginsService)
   {
     let user = this.dataService.user;
     if(user && 'user_id' in user){ this.new_service_provider.user_id = parseInt(user.user_id); }
+    this.user_mode = this.dataService.mode;
   }
 
   async ngOnInit() {
@@ -50,8 +58,19 @@ export class AddServiceProviderComponent implements OnInit {
     await this.getSectors();
     await this.getServiceCategories();
 
-    this.new_service_provider.contact_persons.push(this.person);
-    this.new_service_provider.branches.push(this.branch);
+    if(this.user_mode.sa_mode == true){
+      // get all entities (org's and individuals)
+      await this.getAllEntities();
+    }else{
+      // get the entity id from the logged in user
+      this.new_service_provider.entity_id = this.dataService.user.entity_id;
+    }
+
+    this.new_service_provider.contact_persons.push({full_name: null, email: null, phone: null});
+    this.new_service_provider.branches.push({location_name: null, location_email: null, location_phone: null, action: null, address: null});
+
+    // init modal
+    this.pluginService.popUp('spModalStatus');
   }
 
   async getCountries(){
@@ -72,6 +91,18 @@ export class AddServiceProviderComponent implements OnInit {
       (response:any) => {
         if(response){
           if ('data' in response) { this.allSectors = response.data; }
+        }
+      },
+      error => { console.log('Sectors Err Response >', error); }
+    );
+  }
+
+  async getAllEntities(){
+    let endpoint: string = this.apiService.getEndpoints().settings.entities.get_all_entities;
+    await this.apiService.get(endpoint).subscribe(
+      (response:any) => {
+        if(response){
+          if ('data' in response) { this.allEntities = response.data; }
         }
       },
       error => { console.log('Sectors Err Response >', error); }
@@ -102,23 +133,23 @@ export class AddServiceProviderComponent implements OnInit {
   }
 
   setRegCertificate(event:Event|any){
-    let file:File = event.target.files[0];
-    if (file) {
-      this.new_service_provider.reg_certificate = file.name;
+    this.regFile = event.target.files[0];
+    if (this.regFile) {
+      this.new_service_provider.reg_certificate = this.regFile.name;
       let formData = new FormData();
-      formData.append("reg_cert_file", file);
-      console.log('reg cert file >>',file);
+      formData.append("reg_cert_file", this.regFile);
+      console.log('reg cert file >>',this.regFile);
       // const upload$ = this.http.post("/api/thumbnail-upload", formData);
     }
   }
 
   setTaxCertificate(event:Event|any){
-    let file:File = event.target.files[0];
-    if (file) {
-      this.new_service_provider.tax_certificate = file.name;
+    this.taxFile = event.target.files[0];
+    if (this.taxFile) {
+      this.new_service_provider.tax_certificate = this.taxFile.name;
       let formData = new FormData();
-      formData.append("tax_cert_file", file);
-      console.log('tax cert file >>',file);
+      formData.append("tax_cert_file", this.taxFile);
+      console.log('tax cert file >>',this.taxFile);
       // const upload$ = this.http.post("/api/thumbnail-upload", formData);
     }
   }
@@ -127,23 +158,63 @@ export class AddServiceProviderComponent implements OnInit {
     //
   }
 
-  createNewServiceProvider(){
+  async createNewServiceProvider(){
+    this.isLoading = true;
+    this.pluginService.popUpManually('spModalStatus');
+
     console.log('Payload > ',this.new_service_provider);
     console.log('Certificate File > ',this.reg_certificate_file);
+
+    let endpoint: string = this.apiService.getEndpoints().service_providers.create;
+    await this.apiService.post(this.new_service_provider, endpoint).subscribe(
+      (response:any) => {
+        if(response){
+          if ('data' in response) {
+            this.spCreationResponse = 'Your service provider has been successfully created. You can create a new one or navigate to all service providers to view your list of existing service providers.';
+            this.clearForm(this.new_service_provider);
+          }
+        }else{
+          this.spCreationResponse = 'Looks like an error occurred. Please try again. If this persists, contact us.'
+          this.isLoading = false;
+        }
+      },
+      error => { 
+        this.spCreationResponse = error;
+        console.log('Add sp Err Response >', error);
+        this.isLoading = false;
+      }
+    );
   }
 
   increaseContactPerson(){
-    this.new_service_provider.contact_persons.push(this.person);
+    this.new_service_provider.contact_persons.push({full_name: null, email: null, phone: null});
     console.log(this.new_service_provider.contact_persons);
   }
 
   increaseBranches(){
-    this.new_service_provider.branches.push(this.branch);
+    this.new_service_provider.branches.push({location_name: null, location_email: null, location_phone: null, action: null, address: null});
     console.log(this.new_service_provider.branches);
   }
 
   decreaseFromList(index:number,arr:any){
     arr.splice(index, 1); // 2nd parameter means remove one item only
+  }
+
+  clearForm(obj:any){
+    Object.keys(obj).forEach((key:any) => {
+      if(key == "contact_persons"){ obj[key] = [{full_name: null, email: null, phone: null}]; }
+      else if(key == "branches"){ obj[key] = [{location_name: null, location_email: null, location_phone: null, action: null, address: null}]; }
+      else if(key == "currency"){ obj[key] = 'KES'; }
+      else{ obj[key] = null; }
+    });
+  }
+
+  showModal(modalId:string){
+    // this.pluginService.popUp();
+  }
+
+  closeModal(modalId:string){
+    // this.pluginService.closeAlert(modalId);
   }
 
 }

@@ -89,4 +89,17 @@ export class PluginsService {
     $('#'+id).css("display","block");
     $('.content-wrapper').css("filter","blur(10px)");
   }
+
+  popUp(id:string){
+    $(document).ready(() => {
+      $("#"+id).modal({
+        show:false,
+        backdrop:'static'
+      });
+    });
+  }
+
+  popUpManually(id:string){
+    $('#'+id).modal('show');
+  }
 }

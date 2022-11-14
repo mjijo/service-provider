@@ -64,7 +64,15 @@ export class ApiService {
         sectors: {
           get_all_sectors: 'getAllSectors',
           add_sector: 'addSctor'
+        },
+        entities: {
+          get_all_entities: 'getAllEntities'
         }
+      },
+      service_providers: {
+        create: 'addSvcProv',
+        view_all: '',
+        update: ''
       },
       tasks: {
         get_tasks: 'getAllTasks',

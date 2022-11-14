@@ -15,6 +15,24 @@
                 </p>
                 <hr>
                 <form class="forms-sample">
+
+                  <ng-container *ngIf="user_mode.sa_mode">
+                    <div class="row">
+                      <div class="form-group col-sm-12">
+                        <label for="exampleInputName1">Create service provider on behalf of:</label>
+                        <select [(ngModel)]="new_service_provider.entity_id" [ngModelOptions]="{standalone: true}" [value]="new_service_provider.entity_id" (change)="validateInputs()" style="width: 100%;height: 3rem;border: 1px solid mediumpurple;">
+                            <ng-container *ngIf="allEntities.length > 0">
+                                <ng-container *ngFor="let entity of allEntities; index as i">
+                                    <option [value]="entity.entity_id">{{entity.entity_name}}</option>
+                                </ng-container>
+                            </ng-container>
+                            <ng-container *ngIf="allEntities.length == 0">
+                                <option disabled>No Data</option>
+                            </ng-container>
+                        </select>
+                      </div>
+                    </div>
+                  </ng-container>
                   
                   <div class="row">
                     <div class="form-group col-sm-12">
@@ -240,9 +258,29 @@
                     </div>
                     </div>
 
-                  <button type="submit" class="btn btn-primary mr-2"><i class="ti-reload"></i> Update</button>
-                  <button type="submit" class="btn btn-success mr-2" (click)="createNewServiceProvider()"><i class="ti-save"></i> Save</button>
-                  <button class="btn btn-light"><i class="ti-close"></i> Cancel</button>
+                  <!-- <button type="submit" class="btn btn-primary mr-2" data-toggle="modal" data-target="#spModalStatus"><i class="ti-reload"></i> Update</button> -->
+                  <button type="submit" class="btn btn-success mr-2" (click)="createNewServiceProvider()" [disabled]="isLoading"><i class="ti-save"></i> Save</button>
+                  <button class="btn btn-light" (click)="clearForm(new_service_provider)"><i class="ti-close"></i> Cancel</button>
+
+                  <div class="modal fade" id="spModalStatus" tabindex="-1" role="dialog" aria-labelledby="spModalStatus" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header" style="background-color: lightgray;">
+                          <h4 class="modal-title" id="myModalLabel">{{isLoading ? 'Creating Service Provider' : 'Creation Status'}}</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>{{isLoading ? 'Creating the service provider, please wait for the process to complete...' : spCreationResponse}}</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Okay</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </form>
               </div>
             </div>

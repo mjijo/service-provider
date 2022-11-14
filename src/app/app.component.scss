@@ -76,3 +76,15 @@
     display: none;
 }
 /* end modal styles */
+
+/* pop up modal */
+::ng-deep div.modal-dialog div.modal-content div.modal-header h4.modal-title {
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+}
+::ng-deep div.modal-dialog div.modal-content .modal-body p {
+    font-size: 1.2rem;
+}
+/* end pop up modal */
